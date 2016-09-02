@@ -30,10 +30,10 @@ Also, please update system.js config to setup mapping:
 ```
 And you should be ready to go! :)
 #
-The default date picker functionality is that it's tied to a standard form input field. Focus on the input (click, or use the tab key) to open an interactive calendar in a small overlay. Choose a date, click elsewhere on the page (blur the input), or hit the Esc key to close. If a date is chosen, feedback is shown as the input's value.
+The default datepicker functionality is that it's tied to a standard form input field. Focus on the input (click, or use the tab key) to open an interactive calendar in a small overlay. Choose a date, click elsewhere on the page (blur the input), or hit the Esc key to close. If a date is chosen, feedback is shown as the input's value.
 
 # Single Date Picker
-The date range picker can be turned into a single date picker widget with only one calendar. In this example, drop-downs to select a month and year have also been enabled at the top of the calendar to quickly jump to different months.
+The date range picker can be turned into a single datepicker widget with only one calendar. In this example, drop-downs to select a month and year have also been enabled at the top of the calendar to quickly jump to different months.
 ### Example
 #
 # Date Range Picker
@@ -50,7 +50,7 @@ Restrict the range of selectable dates with the minDate and maxDate options. Set
 Standalone timepicker directive is now deprecated, instead, you can use <code> from ```ng2-datepicker```.
 ### Example
 
-In case you need date picker with time picker support, you can add <code> to <file>
+In case you need datepicker with time picker support, you can add <code> to <file>
 
 ### Date picker with time picker support example
 
@@ -60,7 +60,7 @@ Predefined ranges allows to show the option to predefine date ranges that the us
 ### Example
 #
 # Localization
-Localize the date picker calendar language and format (English / Western formatting is the default). The date picker includes built-in support for languages that read right-to-left, such as Arabic and Hebrew.  Datepicker control supports localization by recognizing different regional options exposed from the browser and also supports validation.
+Localize the datepicker calendar language and format (English / Western formatting is the default). The datepicker includes built-in support for languages that read right-to-left, such as Arabic and Hebrew.  Datepicker control supports localization by recognizing different regional options exposed from the browser and also supports validation.
 ### Example
 #
 # CSS Styling
