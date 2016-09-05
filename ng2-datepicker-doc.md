@@ -51,7 +51,7 @@ Restrict the range of selectable dates with the minDate and maxDate options. Set
 Standalone timepicker directive is now deprecated, instead, you can use ```<code>``` from ```ng2-datepicker```.
 ### Example
 
-In case you need datepicker with time picker support, you can add <code> to <file>
+In case you need time picker support along with datepicker, you can add <code> to <file>
 
 ### Date picker with time picker support example
 
@@ -67,7 +67,6 @@ datepicker supports calendar language and format (English / Western formatting i
 # CSS Styling
 ```ng2-datepicker``` supports CSS Styling, so you can customize the calendar theme, so that calendar theme that will correspond to your overall. To  designbs-date-picker.css
 ### Example
-Restrict the range of selectable dates with the minDate and maxDate options. Set the 
 #
 # Api
 ### Usage
