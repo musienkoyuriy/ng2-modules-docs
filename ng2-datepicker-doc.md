@@ -1,6 +1,7 @@
 # Datepicker
 
-The Angular2 Datepicker is a highly configurable modular component that adds date and time picker functionality to your pages. You can customize the date and time formats, language, and use selectable date ranges as well as apply CSS styles.
+The Angular2 Datepicker is a highly configurable modular component that adds date and time picker functionality to your pages. 
+You can customize the date and time formats, language, and use selectable date ranges as well as apply CSS styles.
 
 # Usage
 ```ng2-datepicker``` currently relies on [`Moment.js`](http://momentjs.com/) to format date.
@@ -68,6 +69,20 @@ datepicker supports calendar language and format (English / Western formatting i
 ### Example
 Restrict the range of selectable dates with the minDate and maxDate options. Set the 
 #
+# Api
+### Usage
+```javascript
+import { DatepickerModule } from 'ng2-bootstrap/ng2-bootstrap';
+// or
+import { DatepickerModule } from 'ng2-bootstrap/components/datepicker';
+```
+### Annotations
+```javascript
+// component DatePicker
+@Component({
+  selector: 'datepicker[ngModel], [datepicker][ngModel]'
+})
+```
 # Options, Methods & Events
 As the examples demonstrate above ng2-datepicker has many useful options:
 ```javascript
