@@ -31,19 +31,17 @@ Also, please update system.js config to setup mapping:
 ```
 And you should be ready to go! :)
 #
-
-# Single Date Picker
-The date range picker can be turned into a single datepicker widget with only one calendar. In this example, drop-downs for month and year selection can be found at the top of the calendar to quickly switch between months.
-### Example
-#
 # Date Range Picker
 The date range picker can be attached to a text input or embedded to a web page. It will use the current value of the input to initialize, and update the input if new dates are chosen.
 ### Pop-up example
 ### Embedded example
-
 #
 # Restrict date range
 Restrict the range of selectable dates with the minDate and maxDate options. Set the beginning and end dates as actual dates (?Date=null), as a numeric offset from today ```code```, or as a string of periods and units ```code```. For the last, use 'dd' for days, 'MMMM' for months, or 'yyyy' for years.
+### Example
+#
+# Single Date Picker
+The date range picker can be turned into a single datepicker widget with only one calendar. In this example, drop-downs for month and year selection can be found at the top of the calendar to quickly switch between months.
 ### Example
 #
 # Time Picker
@@ -64,7 +62,7 @@ Datepicker supports calendar language and format (English / Western formatting i
 ### Example
 #
 # CSS Styling
-Datepicker supports CSS Styling, so you can customize the calendar theme, so that calendar theme that will correspond to your overall. To  designbs-date-picker.css
+CSS Styling allows to customize the calendar theme, so that calendar theme that will correspond to overall website design. To  designbs-date-picker.css
 ### Example
 
 #
