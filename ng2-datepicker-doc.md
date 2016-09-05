@@ -4,7 +4,7 @@ The Angular2 Datepicker is a highly configurable modular component that adds dat
 You can customize the date and time formats, language, and use selectable date ranges as well as apply CSS styles.
 
 # Usage
-```ng2-datepicker``` currently relies on [`Moment.js`](http://momentjs.com/) to format date.
+```ng2-bootstrap datepicker``` currently relies on [`Moment.js`](http://momentjs.com/) to format date.
 ```
 # install typings globally
 npm install -g typings
@@ -31,7 +31,6 @@ Also, please update system.js config to setup mapping:
 ```
 And you should be ready to go! :)
 #
-The default datepicker functionality is that it's tied to a standard form input field. Focus on the input (click, or use the tab key) to open an interactive calendar in a small overlay. Choose a date, click elsewhere on the page (blur the input), or hit the Esc key to close. If a date is chosen, feedback is shown as the input's value.
 
 # Single Date Picker
 The date range picker can be turned into a single datepicker widget with only one calendar. In this example, drop-downs for month and year selection can be found at the top of the calendar to quickly switch between months.
@@ -48,12 +47,12 @@ Restrict the range of selectable dates with the minDate and maxDate options. Set
 ### Example
 #
 # Time Picker
-Standalone timepicker directive is now deprecated, instead, you can use ```<code>``` from ```ng2-datepicker```.
+Standalone ```ng2-bootsrap timepicker``` directive is now deprecated, instead, you can use ```<code>``` from ```ng2-bootstrap datepicker```.
 ### Example
 
 In case you need time picker support along with datepicker, you can add <code> to <file>
 
-### Date picker with time picker support example
+### Datepicker with time picker support example
 
 #
 # Predefined Ranges
@@ -61,11 +60,11 @@ Predefined ranges allows to show the option to predefine date ranges that the us
 ### Example
 #
 # Localization
-datepicker supports calendar language and format (English / Western formatting is the default) localization. The datepicker includes built-in support for languages that read right-to-left, such as Arabic and Hebrew. Apart from in-code localization support datepicker control also supports localization by recognizing different regional options exposed from the browser and also supports validation.
+Datepicker supports calendar language and format (English / Western formatting is the default) localization. The datepicker includes built-in support for languages that read right-to-left, such as Arabic and Hebrew. Apart from in-code localization support datepicker control also supports localization by recognizing different regional options exposed from the browser and also supports validation.
 ### Example
 #
 # CSS Styling
-```ng2-datepicker``` supports CSS Styling, so you can customize the calendar theme, so that calendar theme that will correspond to your overall. To  designbs-date-picker.css
+Datepicker supports CSS Styling, so you can customize the calendar theme, so that calendar theme that will correspond to your overall. To  designbs-date-picker.css
 ### Example
 
 #
@@ -84,7 +83,7 @@ import { DatepickerModule } from 'ng2-bootstrap/components/datepicker';
 })
 ```
 # Options, Methods & Events
-As the examples demonstrate above ng2-datepicker has many useful options:
+As the examples demonstrate above ```ng2-bootstrap datepicker``` has many useful options:
 ```javascript
 ngModel (:Date) - binds to date
 datepickerMode (?string='day') - sets datepicker mode, supports: day, month, year
