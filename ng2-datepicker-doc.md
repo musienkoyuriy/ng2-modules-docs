@@ -67,6 +67,7 @@ datepicker supports calendar language and format (English / Western formatting i
 # CSS Styling
 ```ng2-datepicker``` supports CSS Styling, so you can customize the calendar theme, so that calendar theme that will correspond to your overall. To  designbs-date-picker.css
 ### Example
+
 #
 # Api
 ### Usage
