@@ -4,7 +4,7 @@ The Angular2 Datepicker is a highly configurable modular component that adds dat
 You can customize the date and time formats, language, and use selectable date ranges as well as apply CSS styles.
 
 # Usage
-```ng2-bootstrap datepicker``` currently relies on [`Moment.js`](http://momentjs.com/) to format date.
+```ng2-bootstrap datepicker``` currently relies on [`Moment.js`](http://momentjs.com/) to format date, so it's necessary to install it.:
 ```
 # install typings globally
 npm install -g typings
