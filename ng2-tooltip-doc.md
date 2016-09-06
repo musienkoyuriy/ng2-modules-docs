@@ -7,29 +7,17 @@ group: components
 Inspired by the excellent Tipsy jQuery plugin written by Jason Frame. Tooltips are an updated version, which don’t rely on images, use CSS3 for animations, and much more.
 
 Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tooltips) or [bootstrap 4](http://v4-alpha.getbootstrap.com/components/tooltips/)
-<!--
 
 ## Contents
 
-1. [Introduction](#introduction)
-2. [Some paragraph](#paragraph1)
-    1.1 [Sub paragraph](#subparagraph1)
+1. [Overview](#overview)
+2. [Examples](#examples1)
+    1.1 [Dynamic Tooltip Pop-up & Text](#examples2)
+    1.2 [Custom Class, TemplateRef and HTML in tooltips](#examples3)
+    1.3 [Custom Triggers & conditions](#examples4)
 3. [Another paragraph](#paragraph2)
 
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
-
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
-
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
-
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text
--->
-
-## Overview
+## Overview <a name="overview"></a>
 
 Things to know when using the tooltip plugin:
 
@@ -42,73 +30,38 @@ Things to know when using the tooltip plugin:
 Got all that? Great, let's see how they work with some examples.
 
 
-## Examples
+## Examples <a name="examples1"></a>
 
-Hover over the links below to see tooltips:
+### Dynamic Tooltip Text <a name="examples2"></a>
+```code1```
+```Example```
+### Dynamic Tooltip Popup Text
+```code2```
+```Example2```
 
-<div class="bd-example tooltip-demo">
-  <p class="muted">Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
-  </p>
-</div>
+### Custom Class, TemplateRef and HTML in tooltips <a name="examples3"></a>
+Tooltips can contain any arbitrary HTML, Angular bindings and even directives! Simply enclose desired content in a <template> element.
 
-### Static demo
+*HTML*
+```code1```
+I can even contain HTML. ```Check me out!```
 
-Four options are available: top, right, bottom, and left aligned.
+*TemplateRef*
+```code2```
+Or use a TemplateRef. ```Check me out!```
 
-<div class="bd-example bd-example-tooltip-static">
-  <div class="tooltip tooltip-top" role="tooltip">
-    <div class="tooltip-arrow"></div>
-    <div class="tooltip-inner">
-      Tooltip on the top
-    </div>
-  </div>
-  <div class="tooltip tooltip-right" role="tooltip">
-    <div class="tooltip-arrow"></div>
-    <div class="tooltip-inner">
-      Tooltip on the right
-    </div>
-  </div>
-  <div class="tooltip tooltip-bottom" role="tooltip">
-    <div class="tooltip-arrow"></div>
-    <div class="tooltip-inner">
-      Tooltip on the bottom
-    </div>
-  </div>
-  <div class="tooltip tooltip-left" role="tooltip">
-    <div class="tooltip-arrow"></div>
-    <div class="tooltip-inner">
-      Tooltip on the left
-    </div>
-  </div>
-</div>
+*Custom Class*
+```code3```
+I can have a custom class. ```Check me out!```
 
-### Interactive demo
+### Сustom triggers & conditions <a name="examples4"></a>
+*Custom triggers*
+```code1```
+```Example```
+*Conditions*
+```code2```
+```Example2```
 
-Hover over the buttons below to see their tooltips.
-
-<div class="bd-example tooltip-demo">
-  <div class="bd-example-tooltips">
-    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
-    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
-    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
-    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
-  </div>
-</div>
-
-{% highlight html %}
-<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-  Tooltip on top
-</button>
-<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
-  Tooltip on right
-</button>
-<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
-  Tooltip on bottom
-</button>
-<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
-  Tooltip on left
-</button>
-{% endhighlight %}
 
 ## Usage
 ```typescript
@@ -134,6 +87,7 @@ export class TooltipDirective {
 ```
 
 ## Tooltip properties
+```typescript
   - `tooltip` (`string`) - text of tooltip
   - `tooltipHtml` (`string|TempalteRef`) - tooltip custom html content, defined as string or template reference
   - `tooltipPlacement` (`?string='top'`) - tooltip positioning instruction, supported positions: 'top', 'bottom', 'left', 'right'
@@ -145,43 +99,86 @@ export class TooltipDirective {
   - `tooltipClass` (`?string`) - custom tooltip class applied to the tooltip container
   - `tooltipIsOpen` (`?boolean=false`) - if `true` tooltip is currently visible
   - `tooltipContext` (`any`) - if a template is used for the content, then this property can be used to specify a context for that template. The template variable exposed is called 'model'.
-
+```
 ### Markup
-
-<ul class="tab">
-  <li><a href="#" class="tablinks" onclick="openMarkup(event, 'Markup')">Markup</a></li>
-  <li><a href="#" class="tablinks" onclick="openTypeScript(event, 'TypeScript')">TypeScript</a></li>
-  
-</ul>
-
-<div id="Markup" class="tabcontent">
-  <h3>Markup</h3>
-  <p>Test</p>
+```
+<div class="form-group">
+  <label>Dynamic Tooltip Text</label>
+  <input type="text" [(ngModel)]="dynamicTooltipText" class="form-control">
 </div>
-
-<div id="TypeScript" class="tabcontent">
-  <h3>TypeScript</h3>
-  <p>Test2</p> 
+<div class="form-group">
+  <label>Dynamic Tooltip Popup Text</label>
+  <input type="text" [(ngModel)]="dynamicTooltip" class="form-control">
 </div>
-
-#### Making tooltips work for keyboard and assistive technology users
-
-You should only add tooltips to HTML elements that are traditionally keyboard-focusable and interactive (such as links or form controls). Although arbitrary HTML elements (such as `<span>`s) can be made focusable by adding the `tabindex="0"` attribute, this will add potentially annoying and confusing tab stops on non-interactive elements for keyboard users. In addition, most assistive technologies currently do not announce the tooltip in this situation.
-{% endcallout %}
-
-{% highlight html %}
-<!-- HTML to write -->
-<a href="#" data-toggle="tooltip" title="Some tooltip text!">Hover over me</a>
-
-<!-- Generated markup by the plugin -->
-<div class="tooltip tooltip-top" role="tooltip">
-  <div class="tooltip-arrow"></div>
-  <div class="tooltip-inner">
-    Some tooltip text!
+<p>
+  Pellentesque <a href="#" [tooltip]="dynamicTooltip">{{dynamicTooltipText}}</a>,
+  sit amet venenatis urna cursus eget nunc scelerisque viverra mauris, in
+  aliquam. Tincidunt lobortis feugiat vivamus at
+  <a href="#" tooltipPlacement="left" tooltip="On the Left!">left</a> eget
+  arcu dictum varius duis at consectetur lorem. Vitae elementum curabitur
+  <a href="#" tooltipPlacement="right" tooltip="On the Right!">right</a>
+  nunc sed velit dignissim sodales ut eu sem integer vitae. Turpis egestas
+  <a href="#" tooltipPlacement="bottom" tooltip="On the Bottom!">bottom</a>
+  pharetra convallis posuere morbi leo urna,
+  <a href="#" [tooltipAnimation]="false" tooltip="I don't fade. :-(">fading</a>
+  at elementum eu, facilisis sed odio morbi quis commodo odio. In cursus
+  <a href="#" tooltipPopupDelay='1000' tooltip='appears with delay'>delayed</a> turpis massa tincidunt dui ut.
+  nunc sed velit dignissim sodales ut eu sem integer vitae. Turpis egestas
+</p>
+ 
+<p>
+  I can even contain HTML. <a href="#" [tooltipHtml]="htmlTooltip">Check me out!</a>
+</p>
+ 
+<template #toolTipTemplate let-model="model">
+  <h4>Tool tip custom content defined inside a template</h4>
+  <h5>With context binding: {{model.text}}</h5>
+</template>
+ 
+<p>
+  Or use a TemplateRef. <a href="#" [tooltipHtml]="toolTipTemplate" [tooltipContext]="tooltipModel">Check me out!</a>
+<p>
+ 
+<p>
+  I can have a custom class. <a href="#" tooltip="I can have a custom class applied to me!" tooltipClass="customClass">Check me out!</a>
+</p>
+ 
+<form role="form">
+  <div class="form-group">
+    <label>Or use custom triggers, like focus: </label>
+    <input type="text" name="clickMe" value="Click me!" tooltip="See? Now click away..."  tooltipTrigger="focus" tooltipPlacement="right" class="form-control" />
   </div>
-</div>
-{% endhighlight %}
-
+ 
+  <div class="form-group" ngClass="{'has-error' : !inputModel}">
+    <label>Disable tooltips conditionally:</label>
+    <input type="text" name="inputModel" [(ngModel)]="inputModel" class="form-control"
+           placeholder="Hover over this for a tooltip until this is filled"
+           tooltip="Enter something in this input field to disable this tooltip"
+           tooltipPlacement="top"
+           tooltipTrigger="mouseenter"
+           [tooltipEnable]="!inputModel || inputModel.length==0" />
+  </div>
+</form>
+```
+### TypeScript
+```typescript
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+ 
+// webpack html imports
+let template = require('./tooltip-demo.html');
+ 
+@Component({
+  selector: 'tooltip-demo',
+  template: template,
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class TooltipDemoComponent {
+  public dynamicTooltip:string = 'Hello, World!';
+  public dynamicTooltipText:string = 'dynamic';
+  public htmlTooltip:string = 'I\'ve been made <b>bold</b>!';
+  public tooltipModel:any = {text: 'foo', index: 1};
+}
+```
 ### Options
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-animation=""`.
@@ -284,11 +281,13 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
   </table>
 </div>
 
-{% callout info %}
-#### Data attributes for individual tooltips
+ <div class="callout">
+ <h2>Data attributes for individual tooltips</h2>
+ <p>Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.</p>
+ </div>
 
-Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.
-{% endcallout %}
+
+
 
 ### Methods
 
@@ -350,9 +349,3 @@ Hides and destroys an element's tooltip. Tooltips that use delegation (which are
     </tbody>
   </table>
 </div>
-
-{% highlight js %}
-$('#myTooltip').on('hidden.bs.tooltip', function () {
-  // do something…
-})
-{% endhighlight %}
