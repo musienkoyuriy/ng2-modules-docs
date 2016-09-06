@@ -12,10 +12,16 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tooltips)
 
 1. [Overview](#overview)
 2. [Examples](#examples1)
-    1.1 [Dynamic Tooltip Pop-up & Text](#examples2)
-    1.2 [Custom Class, TemplateRef and HTML in tooltips](#examples3)
-    1.3 [Custom Triggers & conditions](#examples4)
-3. [Another paragraph](#paragraph2)
+    2.1 [Dynamic Tooltip Pop-up & Text](#examples2)
+    2.2 [Custom Class, TemplateRef and HTML in tooltips](#examples3)
+    2.3 [Custom Triggers & conditions](#examples4)
+3. [Usage](#usage)
+4. [Annotations](#annotations)
+5. [Tooltip properties](#properties)
+6. [Markup](#markup)
+7. [Options](#options)
+8. [Methods](#methods)
+9. [Events](#events)
 
 ## Overview <a name="overview"></a>
 
@@ -63,14 +69,14 @@ I can have a custom class. ```Check me out!```
 ```Example2```
 
 
-## Usage
+## Usage <a name="usage"></a>
 ```typescript
 import { TooltipModule } from 'ng2-bootstrap/ng2-bootstrap';
 // or
 import { TooltipModule } from 'ng2-bootstrap/components/tooltip';
 ```
 
-## Annotations
+## Annotations <a name="annotations"></a>
 ```typescript
 // class Tooltip implements OnInit
 @Directive({ selector: '[tooltip]' })
@@ -86,7 +92,7 @@ export class TooltipDirective {
 }
 ```
 
-## Tooltip properties
+## Tooltip properties <a name="properties"></a>
 ```typescript
   - `tooltip` (`string`) - text of tooltip
   - `tooltipHtml` (`string|TempalteRef`) - tooltip custom html content, defined as string or template reference
@@ -100,7 +106,7 @@ export class TooltipDirective {
   - `tooltipIsOpen` (`?boolean=false`) - if `true` tooltip is currently visible
   - `tooltipContext` (`any`) - if a template is used for the content, then this property can be used to specify a context for that template. The template variable exposed is called 'model'.
 ```
-### Markup
+### Markup <a name="markup"></a>
 ```
 <div class="form-group">
   <label>Dynamic Tooltip Text</label>
@@ -179,7 +185,7 @@ export class TooltipDemoComponent {
   public tooltipModel:any = {text: 'foo', index: 1};
 }
 ```
-### Options
+### Options <a name="options"></a>
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-animation=""`.
 
@@ -289,7 +295,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 
 
 
-### Methods
+### Methods <a name="methods"></a>
 
 #### `$().tooltip(options)`
 
@@ -319,7 +325,7 @@ Hides and destroys an element's tooltip. Tooltips that use delegation (which are
 
 {% highlight js %}$('#element').tooltip('dispose'){% endhighlight %}
 
-### Events
+### Events <a name="events"></a>
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
