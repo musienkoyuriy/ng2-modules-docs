@@ -12,9 +12,9 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tooltips)
 
 1. [Overview](#overview)
 2. [Examples](#examples1)
-    2.1 [Dynamic Tooltip Pop-up & Text](#examples2)
-    2.2 [Custom Class, TemplateRef and HTML in tooltips](#examples3)
-    2.3 [Custom Triggers & conditions](#examples4)
+  1. [Dynamic Tooltip Pop-up & Text](#examples2)
+  2. [Custom Class, TemplateRef and HTML in tooltips](#examples3)
+  3. [Custom Triggers & conditions](#examples4)
 3. [Usage](#usage)
 4. [Annotations](#annotations)
 5. [Tooltip properties](#properties)
@@ -32,6 +32,7 @@ Things to know when using the tooltip plugin:
 - Triggering tooltips on hidden elements will not work.
 - Tooltips for `.disabled` or `disabled` elements must be triggered on a wrapper element.
 - When triggered from hyperlinks that span multiple lines, tooltips will be centered. Use `white-space: nowrap;` on your `<a>`s to avoid this behavior.
+
 
 Got all that? Great, let's see how they work with some examples.
 
