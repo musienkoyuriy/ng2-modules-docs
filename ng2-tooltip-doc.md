@@ -38,10 +38,12 @@ Got all that? Great, let's see how they work with some examples.
 
 
 ## Examples <a name="examples1"></a>
-
+#
 ### Dynamic Tooltip Text <a name="examples2"></a>
+#
 ```code1```
 ```Example```
+#
 ### Dynamic Tooltip Popup Text
 ```code2```
 ```Example2```
