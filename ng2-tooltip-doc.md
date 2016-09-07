@@ -84,7 +84,7 @@ I can have a custom class. `Check me out!`
 `code2`
 #
 `Example2`
-#
+
 ## Usage <a name="usage"></a>
 ```typescript
 import { TooltipModule } from 'ng2-bootstrap/ng2-bootstrap';
