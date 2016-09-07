@@ -64,7 +64,7 @@ I can even contain HTML. `Check me out!`
 `code2`
 #
 Or use a TemplateRef. `Check me out!`
-
+#
 **Custom Class**
 #
 `code3`
@@ -84,9 +84,7 @@ I can have a custom class. `Check me out!`
 `code2`
 #
 `Example2`
-
-
-
+#
 ## Usage <a name="usage"></a>
 ```typescript
 import { TooltipModule } from 'ng2-bootstrap/ng2-bootstrap';
