@@ -53,19 +53,19 @@ Got all that? Great, let's see how they work with some examples.
 ### Custom Class, TemplateRef and HTML in tooltips <a name="examples3"></a>
 Tooltips can contain any arbitrary HTML, Angular bindings and even directives! Simply enclose desired content in a <template> element.
 
-*HTML*
+**HTML**
 #
 `code1`
 #
 I can even contain HTML. `Check me out!`
 
-*TemplateRef*
+**TemplateRef**
 #
 `code2`
 #
 Or use a TemplateRef. `Check me out!`
 
-*Custom Class*
+**Custom Class**
 ```code3```
 I can have a custom class. `Check me out!`
 
