@@ -1,8 +1,4 @@
----
-layout: docs
-title: Tooltips
-group: components
----
+# Tooltips
 
 Inspired by the excellent Tipsy jQuery plugin written by Jason Frame. Tooltips are an updated version, which don’t rely on images, use CSS3 for animations, and much more.
 
@@ -12,16 +8,17 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tooltips)
 
 1. [Overview](#overview)
 2. [Examples](#examples1)
-  1. [Dynamic Tooltip Pop-up & Text](#examples2)
-  2. [Custom Class, TemplateRef and HTML in tooltips](#examples3)
-  3. [Custom Triggers & conditions](#examples4)
-3. [Usage](#usage)
-4. [Annotations](#annotations)
-5. [Tooltip properties](#properties)
-6. [Markup](#markup)
-7. [Options](#options)
-8. [Methods](#methods)
-9. [Events](#events)
+  1. Positioning (top|left|top right... )
+  2. Append (to current element - default, anchorRef, body)
+  3. Custom Class && Styling (custom classes to tooltip container)
+  4. Text, Html and TemplateRef in tooltips (text | html | templateRef) [...]
+  5. [Custom Triggers & conditions](#examples4) (hover|touch|click)
+  6. [Dynamic Tooltip Pop-up & Text](#examples2)
+3. [Usage](#usage)  ...root module imports? @otelnov
+4. [API Reference](#annotations)
+ 1. [Properties](#properties)
+ 2. Events
+ 3. Methods (export-as)
 
 ## Overview <a name="overview"></a>
 
