@@ -66,7 +66,9 @@ I can even contain HTML. `Check me out!`
 Or use a TemplateRef. `Check me out!`
 
 **Custom Class**
-```code3```
+#
+`code3`
+#
 I can have a custom class. `Check me out!`
 
 ### Сustom triggers & conditions <a name="examples4"></a>
