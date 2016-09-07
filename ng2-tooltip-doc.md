@@ -41,23 +41,23 @@ Got all that? Great, let's see how they work with some examples.
 #
 ### Dynamic Tooltip Text <a name="examples2"></a>
 #
-```code1```
-```Example```
+`code1`
+`Example`
 #
 ### Dynamic Tooltip Popup Text
-```code2```
-```Example2```
+`code2`
+`Example2`
 
 ### Custom Class, TemplateRef and HTML in tooltips <a name="examples3"></a>
 Tooltips can contain any arbitrary HTML, Angular bindings and even directives! Simply enclose desired content in a <template> element.
 
 *HTML*
-```code1```
-I can even contain HTML. ```Check me out!```
+`code1`
+I can even contain HTML. `Check me out!`
 
 *TemplateRef*
-```code2```
-Or use a TemplateRef. ```Check me out!```
+`code2`
+Or use a TemplateRef. `Check me out!`
 
 *Custom Class*
 ```code3```
@@ -65,11 +65,11 @@ I can have a custom class. ```Check me out!```
 
 ### Сustom triggers & conditions <a name="examples4"></a>
 *Custom triggers*
-```code1```
-```Example```
+`code1`
+`Example`
 *Conditions*
-```code2```
-```Example2```
+`code2`
+`Example2`
 
 
 ## Usage <a name="usage"></a>
@@ -308,25 +308,25 @@ Attaches a tooltip handler to an element collection.
 
 Reveals an element's tooltip. **Returns to the caller before the tooltip has actually been shown** (i.e. before the `shown.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip. Tooltips with zero-length titles are never displayed.
 
-{% highlight js %}$('#element').tooltip('show'){% endhighlight %}
+
 
 #### `.tooltip('hide')`
 
 Hides an element's tooltip. **Returns to the caller before the tooltip has actually been hidden** (i.e. before the `hidden.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip.
 
-{% highlight js %}$('#element').tooltip('hide'){% endhighlight %}
+
 
 #### `.tooltip('toggle')`
 
 Toggles an element's tooltip. **Returns to the caller before the tooltip has actually been shown or hidden** (i.e. before the `shown.bs.tooltip` or `hidden.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip.
 
-{% highlight js %}$('#element').tooltip('toggle'){% endhighlight %}
+
 
 #### `.tooltip('dispose')`
 
 Hides and destroys an element's tooltip. Tooltips that use delegation (which are created using [the `selector` option](#options)) cannot be individually destroyed on descendant trigger elements.
 
-{% highlight js %}$('#element').tooltip('dispose'){% endhighlight %}
+
 
 ### Events <a name="events"></a>
 
