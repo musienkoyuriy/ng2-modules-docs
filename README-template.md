@@ -1,6 +1,7 @@
 # Project Title
 [![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://angular.io/styleguide)
 [![slack](https://img.shields.io/badge/join-slack-brightgreen.svg)](https://www.hamsterpad.com/chat/ng2)
+#
 One Paragraph of project description goes here along with relevant badges
 
 ## Table of contents 
