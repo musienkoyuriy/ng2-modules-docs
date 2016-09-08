@@ -1,3 +1,5 @@
+# Valor Software README styleguide
+
 So, you wrote a library or an application, and now you want to people to use your project (that's the main idea, isn't it?) 
 
 And what is the best way to "sell" your project to people? Just tell them what it does, the right way. 
@@ -8,7 +10,7 @@ Write.a.fucking.README (or simply fill out [README-template.md](README-template.
 At Valor Software we do it this way --->
 
 
-(remember, it doesn't matter where you work, just be a human, don't be an asshole, document all the shit out there. Always.)
+#####(remember, it doesn't matter where you work, just be a human, don't be an asshole, document all the shit out there. Always.)
 
 First things first:
 To make it easier to understand what your library/app do, write a **short description** of what the project does. 
@@ -18,7 +20,7 @@ When a developer starts looking at libraries that might solve his or her problem
 1. Does this project solve my problem?
 2. If so, how?
 
-The very next thing is an installation instructions. Apart from description, ease of installation is another selling point for your project. There's probably going to be several lines, with something like `Clone this repo,  npm i && npm start` but they will let user know how to get up and going with your project.
+The very next thing is an **installation instructions**. Apart from description, ease of installation is another selling point for your project. There's probably going to be several lines, with something like `Clone this repo,  npm i && npm start` but they will let user know how to get up and going with your project.
 
 We assume that as a developer of this app/module/library, you know which additional libraries or other packages future user will need, so kindly describe their installation instructions (yes, all the hacky stuff too ;) ).
 
@@ -32,7 +34,7 @@ Now that you have a basic example and installation instructions, and your writin
 
 **Imports, Methods, Properties, Events, Options** all this stuff goes here with a brief description how to use each element and links to a full documentation if any.
 
-Troubleshooting or Bug reporting section is here to let your users know that you actually care about their bug reports and to remind them that there's a great feature called 'GitHub Issues'.
+**Troubleshooting | Bug reporting** section is here to let your users know that you actually care about their bug reports and to remind them that there's a great feature called 'GitHub Issues'.
 Finally, tag on your license with something like:
 `The MIT License (see the LICENSE file for the full text)`
 
