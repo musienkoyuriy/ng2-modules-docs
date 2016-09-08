@@ -44,10 +44,11 @@ Last but not least - make it pretty and add some **design love!**
 
 Add your project logo, an icon and a beautify photoshopped screenshot.
 
-Add relevant “badges”: 
+Add relevant “badges” [![forthebadge](http://forthebadge.com/images/badges/fuck-it-ship-it.svg)](http://forthebadge.com)
 
-[![forthebadge](http://forthebadge.com/images/badges/fuck-it-ship-it.svg)](http://forthebadge.com)
-or [Code Climate’s](http://codeclimate.com/) 
+or 
+
+[Code Climate’s](http://codeclimate.com/) 
 [![Code Climate](https://codeclimate.com/github/valor-software/ng2-dragula/badges/gpa.svg)](https://codeclimate.com/github/valor-software/ng2-dragula)
 
 to your **README**, but remember that they reflect on your project — a passing build with high quality code attracts developers to your library, while a failing master build can give them pause.
