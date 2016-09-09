@@ -18,8 +18,8 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tooltips)
 3. [Usage](#usage)  ...root module imports? @otelnov
 4. [API Reference](#api)
  1. [Properties](#properties)
- 2. [Events]
- 3. [Methods] (export-as)
+ 2. [Events](#events)
+ 3. [Methods](#methods)(export-as)
 
 ## Overview <a name="overview"></a>
 
