@@ -1,5 +1,6 @@
 # Tooltips
 
+Tooltip is a small pop-up box that appears when the user moves the mouse pointer over an element.
 Inspired by the excellent Tipsy jQuery plugin written by Jason Frame. Tooltips are an updated version, which don’t rely on images, use CSS3 for animations, and much more.
 
 Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tooltips) or [bootstrap 4](http://v4-alpha.getbootstrap.com/components/tooltips/)
@@ -8,22 +9,22 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tooltips)
 
 1. [Overview](#overview)
 2. [Examples](#examples1)
-  1. Positioning (top|left|top right... )
-  2. Append (to current element - default, anchorRef, body)
-  3. Custom Class && Styling (custom classes to tooltip container)
-  4. Text, Html and TemplateRef in tooltips (text | html | templateRef) [...]
-  5. [Custom Triggers & conditions](#examples4) (hover|touch|click)
+  1. [Positioning](#positioning)
+  2. [Attachment points](#attachment)
+  3. [Custom Classes & Styling options](#styling)
+  4. [Content](#content)  
+  5. [Custom Triggers & conditions](#examples4)
   6. [Dynamic Tooltip Pop-up & Text](#examples2)
 3. [Usage](#usage)  ...root module imports? @otelnov
-4. [API Reference](#annotations)
+4. [API Reference](#api)
  1. [Properties](#properties)
- 2. Events
- 3. Methods (export-as)
+ 2. [Events]
+ 3. [Methods] (export-as)
 
 ## Overview <a name="overview"></a>
 
 Things to know when using the tooltip plugin:
-
+- Some of the ng2-tooltip components depends on [Tether.js](https://github.com/HubSpot/tether)
 - Tooltips with zero-length titles are never displayed.
 - Specify `container: 'body'` to avoid rendering problems in more complex components (like our input groups, button groups, etc).
 - Triggering tooltips on hidden elements will not work.
@@ -36,13 +37,68 @@ Got all that? Great, let's see how they work with some examples.
 
 ## Examples <a name="examples1"></a>
 
-### Dynamic Tooltip Text <a name="examples2"></a>
+### Positioning <a name="positioning"></a>
+Identifies the position of the tooltip in relation to the associated target element.
+Tooltips can be attached to 12 locations around the target. When initializing, you may set the position property to any of the following:
+```
+'top left'
+'left top'
+'left middle'
+'left bottom'
+'bottom left'
+'bottom center'
+'bottom right'
+'right bottom'
+'right middle'
+'right top'
+'top right'
+'top center'
 
+By default, the tooltip will appear on top of the element.
+
+```
+
+`Code examples:`
+#
+`Example`
+# 
+### Attachment points <a name="attachment"></a>
+Tooltips can be attached to any DOM element, whether it is <anchor>, input field or a button. 
+
+`Code examples:`
+#
+`Example`
+#
+ 
+### Custom Classes & Styling options <a name="styling"></a>
+On top of its default style, you can add your custom styles via CSS.
+To use a theme, just include its css file (located in the `path` directory) in your page and specify its name in `ng2-tooltips` options. 
+`code1`
+#
+`Example`
+
+### Content<a name="content"></a>
+Tooltip content can range from a simple text string to more complex objects such as HTML and TemplateRef.
+
+
+### Сustom triggers & conditions <a name="examples4"></a>
+Tooltip can be triggered by different events (hover,touch, click) and have various conditions. The default behavior uses hover to trigger the tooltip.
+# 
+
+**_Custom triggers_**
+#
 `code1`
 #
 `Example`
 #
+**_Conditions_**
+
+# 
+`code2`
+#
+`Example2`
 ### Dynamic Tooltip Popup Text
+
 `code2`
 #
 `Example2`
@@ -68,19 +124,7 @@ Or use a TemplateRef. `Check me out!`
 #
 I can have a custom class. `Check me out!`
 
-### Сustom triggers & conditions <a name="examples4"></a>
-#
-**_Custom triggers_**
-#
-`code1`
-#
-`Example`
-#
-**_Conditions_**
-#
-`code2`
-#
-`Example2`
+
 
 ## Usage <a name="usage"></a>
 ```typescript
@@ -89,7 +133,83 @@ import { TooltipModule } from 'ng2-bootstrap/ng2-bootstrap';
 import { TooltipModule } from 'ng2-bootstrap/components/tooltip';
 ```
 
-## Annotations <a name="annotations"></a>
+## API Reference <a name="api"></a>
+### Tooltip properties <a name="properties"></a>
+```typescript
+  - `tooltip` (`string`) - text of tooltip
+  - `tooltipHtml` (`string|TempalteRef`) - tooltip custom html content, defined as string or template reference
+  - `ngPlacement` (`?string='top'`) - tooltip positioning instruction, supported positions: 'top', 'bottom', 'left', 'right'
+  - `ngAnimation` (`?boolean=true`) - if `false` fade tooltip animation will be disabled
+  - `ngPopupDelay` (*not implemented*) (`?numer=0`) - time in milliseconds before tooltip occurs
+  - `ngTrigger` (*not implemented*) (`?Array<string>`) - array of event names which triggers tooltip opening
+  - `tooltipEnable` (`?boolean=true`) - if `false` tooltip is disabled and will not be shown
+  - `tooltipAppendToBody` (*not implemented*) (`?boolean=false`) - if `true` tooltip will be appended to body
+  - `tooltipClass` (`?string`) - custom tooltip class applied to the tooltip container
+  - `tooltipIsOpen` (`?boolean=false`) - if `true` tooltip is currently visible
+  - `tooltipContext` (`any`) - if a template is used for the content, then this property can be used to specify a context for that template. The template variable exposed is called 'model'.
+```
+### Events <a name="events"></a>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Event Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>show.bs.tooltip</td>
+        <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+      </tr>
+      <tr>
+        <td>shown.bs.tooltip</td>
+        <td>This event is fired when the tooltip has been made visible to the user (will wait for CSS transitions to complete).</td>
+      </tr>
+      <tr>
+        <td>hide.bs.tooltip</td>
+        <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+      </tr>
+      <tr>
+        <td>hidden.bs.tooltip</td>
+        <td>This event is fired when the tooltip has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+### Methods <a name="methods"></a>
+
+#### `$().tooltip(options)`
+
+Attaches a tooltip handler to an element collection.
+
+#### `.tooltip('show')`
+
+Reveals an element's tooltip. **Returns to the caller before the tooltip has actually been shown** (i.e. before the `shown.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip. Tooltips with zero-length titles are never displayed.
+
+
+
+#### `.tooltip('hide')`
+
+Hides an element's tooltip. **Returns to the caller before the tooltip has actually been hidden** (i.e. before the `hidden.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip.
+
+
+
+#### `.tooltip('toggle')`
+
+Toggles an element's tooltip. **Returns to the caller before the tooltip has actually been shown or hidden** (i.e. before the `shown.bs.tooltip` or `hidden.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip.
+
+
+
+#### `.tooltip('dispose')`
+
+Hides and destroys an element's tooltip. Tooltips that use delegation (which are created using [the `selector` option](#options)) cannot be individually destroyed on descendant trigger elements.
+
+<!--
+### Annotations <a name="annotations"></a>
 ```typescript
 // class Tooltip implements OnInit
 @Directive({ selector: '[tooltip]' })
@@ -105,20 +225,7 @@ export class TooltipDirective {
 }
 ```
 
-## Tooltip properties <a name="properties"></a>
-```typescript
-  - `tooltip` (`string`) - text of tooltip
-  - `tooltipHtml` (`string|TempalteRef`) - tooltip custom html content, defined as string or template reference
-  - `tooltipPlacement` (`?string='top'`) - tooltip positioning instruction, supported positions: 'top', 'bottom', 'left', 'right'
-  - `tooltipAnimation` (`?boolean=true`) - if `false` fade tooltip animation will be disabled
-  - `tooltipPopupDelay` (*not implemented*) (`?numer=0`) - time in milliseconds before tooltip occurs
-  - `tooltipTrigger` (*not implemented*) (`?Array<string>`) - array of event names which triggers tooltip opening
-  - `tooltipEnable` (`?boolean=true`) - if `false` tooltip is disabled and will not be shown
-  - `tooltipAppendToBody` (*not implemented*) (`?boolean=false`) - if `true` tooltip will be appended to body
-  - `tooltipClass` (`?string`) - custom tooltip class applied to the tooltip container
-  - `tooltipIsOpen` (`?boolean=false`) - if `true` tooltip is currently visible
-  - `tooltipContext` (`any`) - if a template is used for the content, then this property can be used to specify a context for that template. The template variable exposed is called 'model'.
-```
+
 ### Markup <a name="markup"></a>
 ```
 <div class="form-group">
@@ -200,7 +307,7 @@ export class TooltipDemoComponent {
 ```
 ### Options <a name="options"></a>
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-animation=""`.
+There are certain options which may be passed to tooltip via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-animation=""`.
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
@@ -304,67 +411,12 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
  <h2>Data attributes for individual tooltips</h2>
  <p>Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.</p>
  </div>
+-->
 
 
 
 
-### Methods <a name="methods"></a>
-
-#### `$().tooltip(options)`
-
-Attaches a tooltip handler to an element collection.
-
-#### `.tooltip('show')`
-
-Reveals an element's tooltip. **Returns to the caller before the tooltip has actually been shown** (i.e. before the `shown.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip. Tooltips with zero-length titles are never displayed.
 
 
 
-#### `.tooltip('hide')`
 
-Hides an element's tooltip. **Returns to the caller before the tooltip has actually been hidden** (i.e. before the `hidden.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip.
-
-
-
-#### `.tooltip('toggle')`
-
-Toggles an element's tooltip. **Returns to the caller before the tooltip has actually been shown or hidden** (i.e. before the `shown.bs.tooltip` or `hidden.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip.
-
-
-
-#### `.tooltip('dispose')`
-
-Hides and destroys an element's tooltip. Tooltips that use delegation (which are created using [the `selector` option](#options)) cannot be individually destroyed on descendant trigger elements.
-
-
-
-### Events <a name="events"></a>
-
-<div class="table-responsive">
-  <table class="table table-bordered table-striped">
-    <thead>
-      <tr>
-        <th style="width: 150px;">Event Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>show.bs.tooltip</td>
-        <td>This event fires immediately when the <code>show</code> instance method is called.</td>
-      </tr>
-      <tr>
-        <td>shown.bs.tooltip</td>
-        <td>This event is fired when the tooltip has been made visible to the user (will wait for CSS transitions to complete).</td>
-      </tr>
-      <tr>
-        <td>hide.bs.tooltip</td>
-        <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
-      </tr>
-      <tr>
-        <td>hidden.bs.tooltip</td>
-        <td>This event is fired when the tooltip has finished being hidden from the user (will wait for CSS transitions to complete).</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
