@@ -71,7 +71,7 @@ Tooltips can be attached to any DOM element, whether it is <anchor>, input field
 #
  
 ### Custom Classes & Styling options <a name="styling"></a>
-On top of its default style, you can add your custom styles via CSS .
+On top of its default style, you can add your custom styles via CSS and custom classes.
 To use a theme, just include its css file (located in the `path` directory) in your page and specify its name in `ng2-tooltips` options. 
 `code1`
 #
