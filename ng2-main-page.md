@@ -4,9 +4,13 @@ We are Valor Software and we're bringing you ng2-bootstrap, Angular 2 implementa
 
 #Why even use bootstrap?
 ***It’s easy to use***: getting started with Bootstrap is a pretty quick and easy process
+
 ***Faster development***: because Bootstrap has so many ready-made components and resources available, it can significantly speed up your development process.
+
 ***Easy integration***: Bootstrap can be integrated with a variety of other frameworks and platforms, on both new sites and existing ones. You can even use just specific elements of Bootstrap alongside your existing CSS.
+
 ***Styling options***: Bootstrap comes with base styles for all soon-to-be-modular components with an ability to create your own unique styles.
+
 ***Excellent documentation***: We hired a technical writer, so Bootstrap will soon have exceptional documentation available, which will be useful for both beginners and more advanced users.
 
 
