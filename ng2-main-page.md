@@ -55,4 +55,4 @@ How to use it with system.js and angular2 quick start
 Please check this `instructions`
 
 Reading documentation
-Each ng2-bootstrap component has an API and annotation docs, examples and working demo. Each property and event has type annotation and default value if any.
+Each `ng2-bootstrap` component has an API and annotation docs, examples and working demo. Each property and event has type annotation and default value if any.
