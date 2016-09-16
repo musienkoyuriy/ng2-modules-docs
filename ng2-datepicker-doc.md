@@ -80,6 +80,14 @@ Restrict the range of selectable dates with the minDate and maxDate options. Set
 ### Single Date Picker <a name="singledate"></a>
 The date range picker can be turned into a single datepicker widget with only one calendar. In this example, drop-downs for month and year selection can be found at the top of the calendar to quickly switch between months.
 
+### Pop-up example
+
+`Code examples:`
+#
+`Example`
+# 
+### Inline example
+
 `Code examples:`
 #
 `Example`
@@ -93,7 +101,7 @@ Standalone ```ng2-bootsrap timepicker``` directive is now deprecated, instead, y
 # 
 In case you need time picker support along with datepicker, you can add <code> to <file>
 
-### Datepicker & Time picker <a name="datetime"></a>
+### Date & Time picker <a name="datetime"></a>
 
 `Code examples:`
 #

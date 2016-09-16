@@ -23,28 +23,28 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#dropdowns
  
 ## Examples <a name="examples"></a>
 ### Expand direction <a name="direction"></a>
-Dropdown menu can expand both upwards and downwards, change the <div> element with class="dropdown" to "dropup". Default behaviour is `dropdown`
+Dropdown menu can expand both upwards and downwards, change the element with class="dropdown" to "dropup". Default behaviour is `dropdown`
 #
 `code1`
 #
 `Example`
 
 ### Menu aligment <a name="alignment"></a>
-By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add .dropdown-menu-right to a .dropdown-menu to right align the dropdown menu.
+By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add `.dropdown-menu-right` to a `.dropdown-menu` to right-align the dropdown menu.
 #
 `code1`
 #
 `Example`
 
 ### Headers <a name="direction"></a>
-The .dropdown-header class is used to add headers inside the dropdown menu:
+The `.dropdown-header` class is used to add headers inside the dropdown menu:
 #
 `code1`
 #
 `Example`
 
 ### Dividers <a name="direction"></a>
-The .divider class is used to separate links inside the dropdown menu with a thin horizontal border:
+The `.divider` class is used to separate links inside the dropdown menu with a thin horizontal border:
 #
 `code1`
 #
@@ -65,7 +65,8 @@ To disable the button itself, add `disabled` class to the button:
 `Example`
 
 ### Trigger actions <a name="direction"></a>
-#
+Set custom actions to trigger dropdown action.
+# 
 `code1`
 #
 `Example`
