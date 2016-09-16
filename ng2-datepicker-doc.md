@@ -2,26 +2,26 @@
 
 The Angular2 Datepicker is a highly configurable modular component that adds date and time picker functionality to your pages. 
 You can customize the date and time formats, language, and use selectable date ranges as well as apply CSS styles.
-<!--
+
 # Table of contents
-1. [Introduction](#introduction)
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
+1. [Importing dependencies](#dependencies)
+2. [Examples](#examples)
+    1. [Date Range Picker](#daterange)
+    2. [Restrict date range](#restrictrange)
+    3. [Single Date Picker](#singledate)
+    4. [Time Picker](#singletime)
+    5. [Datepicker & Time picker](#datetime)
+    6. [Predefined Ranges](#predef)
+3. [Localization](#localization)
+4. [Styling](#styling)
+5. [Usage](#usage)
+6. [API Reference](#apiref)
+    1. [Properties](#properties)
+    2. [Events](#events)
+    3. [Methods](#methods)
 
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
 
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
-
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
-
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text-->
-
-# Usage
+## Importing dependencies <a name="dependencies"></a>
 ```ng2-bootstrap datepicker``` currently relies on [`Moment.js`](http://momentjs.com/) to format date, so it's necessary to install it.:
 ```
 # install typings globally
@@ -48,43 +48,94 @@ Also, please update system.js config to setup mapping:
   });
 ```
 And you should be ready to go! :)
-#
-# Date Range Picker
+## Examples <a name="examples"></a>
+### Date Range Picker <a name="daterange"></a>
 The date range picker can be attached to a text input or embedded to a web page. It will use the current value of the input to initialize, and update the input if new dates are chosen.
-### Pop-up example
-### Embedded example
-#
-# Restrict date range
-Restrict the range of selectable dates with the minDate and maxDate options. Set the beginning and end dates as actual dates (?Date=null), as a numeric offset from today ```code```, or as a string of periods and units ```code```. For the last, use 'dd' for days, 'MMMM' for months, or 'yyyy' for years.
-### Example
-#
-# Single Date Picker
-The date range picker can be turned into a single datepicker widget with only one calendar. In this example, drop-downs for month and year selection can be found at the top of the calendar to quickly switch between months.
-### Example
-#
-# Time Picker
-Standalone ```ng2-bootsrap timepicker``` directive is now deprecated, instead, you can use ```<code>``` from ```ng2-bootstrap datepicker```.
-### Example
 
+`Code examples:`
+#
+`Example`
+# 
+### Pop-up example
+
+`Code examples:`
+#
+`Example`
+# 
+### Inline example
+
+`Code examples:`
+#
+`Example`
+# 
+#
+### Restrict date range <a name="restrictrange"></a>
+Restrict the range of selectable dates with the minDate and maxDate options. Set the beginning and end dates as actual dates (?Date=null), as a numeric offset from today ```code```, or as a string of periods and units ```code```. For the last, use 'dd' for days, 'MMMM' for months, or 'yyyy' for years.
+
+`Code examples:`
+#
+`Example`
+# 
+
+### Single Date Picker <a name="singledate"></a>
+The date range picker can be turned into a single datepicker widget with only one calendar. In this example, drop-downs for month and year selection can be found at the top of the calendar to quickly switch between months.
+
+`Code examples:`
+#
+`Example`
+# 
+### Time Picker <a name="singletime"></a>
+Standalone ```ng2-bootsrap timepicker``` directive is now deprecated, instead, you can use ```<code>``` from ```ng2-bootstrap datepicker```.
+
+`Code examples:`
+#
+`Example`
+# 
 In case you need time picker support along with datepicker, you can add <code> to <file>
 
-### Datepicker with time picker support example
+### Datepicker & Time picker <a name="datetime"></a>
 
+`Code examples:`
 #
-# Predefined Ranges
+`Example`
+# 
+### Predefined Ranges <a name="predef"></a>
 Predefined ranges allows to show the option to predefine date ranges that the user can choose from a list.
-### Example
-#
-# Localization
-Datepicker supports calendar language and format (English / Western formatting is the default) localization. The datepicker includes built-in support for languages that read right-to-left, such as Arabic and Hebrew. Apart from in-code localization support datepicker control also supports localization by recognizing different regional options exposed from the browser and also supports validation.
-### Example
-#
-# CSS Styling
-CSS Styling allows to customize the calendar theme, so that calendar theme that will correspond to overall website design. To  designbs-date-picker.css
-### Example
 
+`Code examples:`
 #
-# Api
+`Example`
+# 
+## Localization <a name="localization"></a>
+Datepicker supports calendar language and format (English / Western formatting is the default) localization. The datepicker includes built-in support for languages that read right-to-left, such as Arabic and Hebrew. Apart from in-code localization support datepicker control also supports localization by recognizing different regional options exposed from the browser and also supports validation.
+
+`Code examples:`
+#
+`Example`
+# 
+## Styling <a name="styling"></a>
+Styling allows to customize the calendar theme, so that calendar theme that will correspond to overall website design. To  designbs-date-picker.css
+
+`Code examples:`
+#
+`Example`
+#  
+## Usage <a name="usage"></a>
+```typescript
+import { DatepickerModule } from 'ng2-bootstrap/ng2-bootstrap';
+```
+## API Reference <a name="apiref"></a>
+### Properties <a name="properties"></a>
+```typescript
+```
+### Events <a name="events"></a>
+```typescript
+```
+### Methods <a name="methods"></a>
+```typescript
+```
+<!--
+
 ### Usage
 ```javascript
 import { DatepickerModule } from 'ng2-bootstrap/ng2-bootstrap';
@@ -121,4 +172,4 @@ formatMonthTitle (?string='yyyy') - format of title when selecting month
 yearRange (?number=20) - number of years displayed in year selection
 shortcutPropagation (?boolean=false) - if true shortcut`s event propagation will be disabled
 onlyCurrentMonth (?boolean=false) - if true only dates from the currently displayed month will be shown
-```
+```-->

@@ -19,7 +19,7 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tooltips)
 4. [API Reference](#api)
  1. [Properties](#properties)
  2. [Events](#events)
- 3. [Methods](#methods)(export-as)
+ 3. [Methods](#methods)
 
 ## Overview <a name="overview"></a>
 

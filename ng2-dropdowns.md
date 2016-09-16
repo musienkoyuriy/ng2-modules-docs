@@ -5,25 +5,23 @@ A dropdown menu is a toggleable menu that allows the user to choose one value fr
 Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#dropdowns) or [bootstrap 4](http://v4-alpha.getbootstrap.com/components/dropdowns/)
 
 
-1. [Examples](#examples1)
-    1. 
+1. [Examples](#examples)
     1. [Expand direction](#direction)
     2. [Menu alignment](#alignment)
-    3. [Custom Classes & Styling options](#styling)
-    4. [Headers](#content)  
-    5. [Divider](#examples4)
-    6. [Disabled menu items](#examples2)
-    7. [Button state]
-    8. [Trigger actions]    
-    9. [Dropdown Accessibility]
-2. [Usage](#usage)
-3. [API Reference](#api)
-4. [Dropdown properties](#properties)
-5. [Events](#events)
-6. [Toggle properties]()
-7. [Methods](#methods)
+    3. [Headers](#headers)  
+    4. [Divider](#divider)
+    5. [Disabled menu items](#disable)
+    6. [Button state](#btnstate)
+    7. [Trigger actions](#trigger) 
+    8. [Dropdown Accessibility](#accessibility)
+2. [Styling](#styling)
+3. [Usage](#usage)
+4. [API Reference](#api)
+    1. [Properties](#properties)
+    2. [Events](#events)
+    3. [Methods](#methods)
  
-## Examples <a name="examples1"></a>
+## Examples <a name="examples"></a>
 ### Expand direction <a name="direction"></a>
 Dropdown menu can expand both upwards and downwards, change the <div> element with class="dropdown" to "dropup". Default behaviour is `dropdown`
 #
@@ -31,61 +29,63 @@ Dropdown menu can expand both upwards and downwards, change the <div> element wi
 #
 `Example`
 
-### Menu aligment
+### Menu aligment <a name="alignment"></a>
 By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add .dropdown-menu-right to a .dropdown-menu to right align the dropdown menu.
 #
 `code1`
 #
 `Example`
 
-### Custom Classes & Styling options
-You may use simple bootstrap classes, customized CSS or third party add-ons to create beautiful looking dropdown menus
-#
-`code1`
-#
-`Example`
-
-### Headers
+### Headers <a name="direction"></a>
 The .dropdown-header class is used to add headers inside the dropdown menu:
 #
 `code1`
 #
 `Example`
 
-### Dividers
+### Dividers <a name="direction"></a>
 The .divider class is used to separate links inside the dropdown menu with a thin horizontal border:
 #
 `code1`
 #
 `Example`
 
-### Disabled menu items
+### Disabled menu items < a name="direction"></a>
 To disable an item in the dropdown menu, use the `.disabled` class:
 #
 `code1`
 #
 `Example`
 
-### Button state
+### Button state <a name="direction"></a>
 To disable the button itself, add `disabled` class to the button:
 #
 `code1`
 #
 `Example`
 
-### Trigger actions
+### Trigger actions <a name="direction"></a>
 #
 `code1`
 #
 `Example`
 
-### Dropdown Accessibility
+### Dropdown Accessibility <a name="direction"></a>
 Dropdowns have native support for keyboard navigation. Just add role="menu" to your dropdown-menu
 #
 `code1`
 #
 `Example`
-
+## Styling <a name="styling"></a>
+Datepicker uses bootstrap classes, customized CSS or third party add-ons to create beautiful looking dropdown menus
+#
+`code1`
+#
+`Example`
+## Usage <a name="usage"></a>
+```typescript
+import { DropdownModule } from 'ng2-bootstrap/ng2-bootstrap';
+```
 ## API Reference <a name="api"></a>
 ### Dropdown properties <a name="properties"></a>
 ```typescript
@@ -103,6 +103,8 @@ appendToBody (not yet tested) (?boolean=false) - if true dropdownMenu content wi
 onToggle - fired when dropdown toggles, $event:boolean equals dropdown isOpen state
 ```
 ### Methods <a name="methods"></a>
-```
-.dropdown("toggle")	- Toggles the dropdown
-```
+
+#### `.dropdown("toggle")`
+
+Toggles the dropdown.
+
