@@ -134,17 +134,17 @@ import { TooltipModule } from 'ng2-bootstrap/ng2-bootstrap';
 ## API Reference <a name="api"></a>
 ### Tooltip properties <a name="properties"></a>
 ```typescript
-  - `tooltip` (`string`) - text of tooltip
-  - `tooltipHtml` (`string|TempalteRef`) - tooltip custom html content, defined as string or template reference
-  - `ngPlacement` (`?string='top'`) - tooltip positioning instruction, supported positions: 'top', 'bottom', 'left', 'right'
-  - `ngAnimation` (`?boolean=true`) - if `false` fade tooltip animation will be disabled
-  - `ngPopupDelay` (*not implemented*) (`?numer=0`) - time in milliseconds before tooltip occurs
-  - `ngTrigger` (*not implemented*) (`?Array<string>`) - array of event names which triggers tooltip opening
-  - `tooltipEnable` (`?boolean=true`) - if `false` tooltip is disabled and will not be shown
-  - `tooltipAppendToBody` (*not implemented*) (`?boolean=false`) - if `true` tooltip will be appended to body
-  - `tooltipClass` (`?string`) - custom tooltip class applied to the tooltip container
-  - `tooltipIsOpen` (`?boolean=false`) - if `true` tooltip is currently visible
-  - `tooltipContext` (`any`) - if a template is used for the content, then this property can be used to specify a context for that template. The template variable exposed is called 'model'.
+  - `ngTooltip` (`string`) - text of tooltip
+  - `ngTooltipHtml` (`string|TempalteRef`) - tooltip custom html content, defined as string or template reference
+  - `ngTooltipPlacement` (`?string='top'`) - tooltip positioning instruction, supported positions: 'top', 'bottom', 'left', 'right'
+  - `ngTooltipAnimation` (`?boolean=true`) - if `false` fade tooltip animation will be disabled
+  - `ngTooltipPopupDelay` (*not implemented*) (`?numer=0`) - time in milliseconds before tooltip occurs
+  - `ngTooltipTrigger` (*not implemented*) (`?Array<string>`) - array of event names which triggers tooltip opening
+  - `ngTooltipEnable` (`?boolean=true`) - if `false` tooltip is disabled and will not be shown
+  - `ngTooltipAppendToBody` (*not implemented*) (`?boolean=false`) - if `true` tooltip will be appended to body
+  - `ngTooltipClass` (`?string`) - custom tooltip class applied to the tooltip container
+  - `ngTooltipIsOpen` (`?boolean=false`) - if `true` tooltip is currently visible
+  - `ngTooltipContext` (`any`) - if a template is used for the content, then this property can be used to specify a context for that template. The template variable exposed is called 'model'.
 ```
 ### Events <a name="events"></a>
 

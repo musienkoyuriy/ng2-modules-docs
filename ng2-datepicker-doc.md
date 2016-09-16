@@ -6,12 +6,12 @@ You can customize the date and time formats, language, and use selectable date r
 # Table of contents
 1. [Importing dependencies](#dependencies)
 2. [Examples](#examples)
-    1. [Date Range Picker](#daterange)
+    1. [Date range picker](#daterange)
     2. [Restrict date range](#restrictrange)
-    3. [Single Date Picker](#singledate)
-    4. [Time Picker](#singletime)
+    3. [Single date picker](#singledate)
+    4. [Time picker](#singletime)
     5. [Datepicker & Time picker](#datetime)
-    6. [Predefined Ranges](#predef)
+    6. [Predefined ranges](#predef)
 3. [Localization](#localization)
 4. [Styling](#styling)
 5. [Usage](#usage)
@@ -77,7 +77,7 @@ Restrict the range of selectable dates with the minDate and maxDate options. Set
 `Example`
 # 
 
-### Single Date Picker <a name="singledate"></a>
+### Single date picker <a name="singledate"></a>
 The date range picker can be turned into a single datepicker widget with only one calendar. In this example, drop-downs for month and year selection can be found at the top of the calendar to quickly switch between months.
 
 ### Pop-up example
@@ -92,7 +92,7 @@ The date range picker can be turned into a single datepicker widget with only on
 #
 `Example`
 # 
-### Time Picker <a name="singletime"></a>
+### Time picker <a name="singletime"></a>
 Standalone ```ng2-bootsrap timepicker``` directive is now deprecated, instead, you can use ```<code>``` from ```ng2-bootstrap datepicker```.
 
 `Code examples:`
@@ -107,7 +107,7 @@ In case you need time picker support along with datepicker, you can add <code> t
 #
 `Example`
 # 
-### Predefined Ranges <a name="predef"></a>
+### Predefined ranges <a name="predef"></a>
 Predefined ranges allows to show the option to predefine date ranges that the user can choose from a list.
 
 `Code examples:`
@@ -135,6 +135,26 @@ import { DatepickerModule } from 'ng2-bootstrap/ng2-bootstrap';
 ## API Reference <a name="apiref"></a>
 ### Properties <a name="properties"></a>
 ```typescript
+ngModel (:Date) - binds to date
+datepickerMode (?string='day') - sets datepicker mode, supports: day, month, year
+minDate (?Date=null) - oldest selectable date
+maxDate (?Date=null) - latest selectable date
+dateDisabled (?Array<{date:Date, mode:string}>) - array of disabled dates if mode is day, or years, etc.
+customClass (?Array<{date:Date, mode:string, clazz:string}>) - array of custom css classes to be applied to targeted dates
+showWeeks (?boolean=true) - if false week numbers will be hidden
+startingDay (?number=0) - starting day of the week from 0-6 (0=Sunday, ..., 6=Saturday).
+initDate (?Date) - default date to show if ng-model value is not specified
+minMode (?string='day') - set lower datepicker mode, supports: day, month, year
+maxMode (?string='year') - sets upper datepicker mode, supports: day, month, year
+formatDay (?string='dd') - format of day in month
+formatMonth (?string='MMMM') - format of month in year
+formatMear (?string='yyyy') - format of year in year range
+formatDayHeader (?string='EEE') - format of day in week header
+formatDayTitle (?string='MMMM yyyy') - format of title when selecting day
+formatMonthTitle (?string='yyyy') - format of title when selecting month
+yearRange (?number=20) - number of years displayed in year selection
+shortcutPropagation (?boolean=false) - if true shortcut`s event propagation will be disabled
+onlyCurrentMonth (?boolean=false) - if true only dates from the currently displayed month will be shown
 ```
 ### Events <a name="events"></a>
 ```typescript
