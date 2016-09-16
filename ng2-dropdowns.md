@@ -115,12 +115,24 @@ appendToBody (not yet tested) (?boolean=false) - if true dropdownMenu content wi
     </tbody>
   </table>
 </div>
-```typescript
-onToggle - 
-```
+
 ### Methods <a name="methods"></a>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Method</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>.dropdown("toggle")</td>
+        <td>Toggles the dropdown. That simple :)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-#### `.dropdown("toggle")`
 
-Toggles the dropdown.
 
