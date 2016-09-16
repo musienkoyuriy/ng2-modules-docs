@@ -15,7 +15,7 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tooltips)
   4. [Content](#content)  
   5. [Custom Triggers & conditions](#examples4)
   6. [Dynamic Tooltip Pop-up & Text](#examples2)
-3. [Usage](#usage)  ...root module imports? @otelnov
+3. [Usage](#usage)
 4. [API Reference](#api)
  1. [Properties](#properties)
  2. [Events](#events)
