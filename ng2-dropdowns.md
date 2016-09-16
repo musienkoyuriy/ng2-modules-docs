@@ -87,7 +87,7 @@ Datepicker uses bootstrap classes, customized CSS or third party add-ons to crea
 import { DropdownModule } from 'ng2-bootstrap/ng2-bootstrap';
 ```
 ## API Reference <a name="api"></a>
-### Dropdown properties <a name="properties"></a>
+### Properties <a name="properties"></a>
 ```typescript
 isOpen (?boolean=false) - if true dropdown will be opened
 autoClose (?string='nonInput') - behaviour vary:
@@ -99,8 +99,24 @@ keyboardNav (?boolean=false) - if true will enable navigation of dropdown list e
 appendToBody (not yet tested) (?boolean=false) - if true dropdownMenu content will be appended to the body. This is useful when the dropdown button is inside a div with overflow: hidden, and the menu would otherwise be hidden
 ```
 ### Events <a name="events"></a>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Event Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>onToggle</td>
+        <td>Fired when dropdown toggles, $event:boolean equals dropdown isOpen state</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 ```typescript
-onToggle - fired when dropdown toggles, $event:boolean equals dropdown isOpen state
+onToggle - 
 ```
 ### Methods <a name="methods"></a>
 

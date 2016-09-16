@@ -180,6 +180,39 @@ import { TooltipModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 ### Methods <a name="methods"></a>
 
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Method</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+     <tr>
+        <td>$().tooltip(options)</td>
+        <td>Attaches a tooltip handler to an element collection.</td>
+      </tr>
+      <tr>
+        <td>.tooltip('show')</td>
+        <td>Reveals an element's tooltip. **Returns to the caller before the tooltip has actually been shown** (i.e. before the `shown.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip. Tooltips with zero-length titles are never displayed.</td>
+      </tr>
+      <tr>
+        <td>.tooltip('hide')</td>
+        <td>Hides an element's tooltip. **Returns to the caller before the tooltip has actually been hidden**</td>
+      </tr>
+      <tr>
+        <td>.tooltip('toggle')</td>
+        <td>Toggles an element's tooltip. **Returns to the caller before the tooltip has actually been shown or hidden** (i.e. before the `shown.bs.tooltip` or `hidden.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip.</td>
+      </tr>
+      <tr>
+        <td>.tooltip('dispose')</td>
+        <td>Hides and destroys an element's tooltip. Tooltips that use delegation (which are created using [the `selector` option](#options)) cannot be individually destroyed on descendant trigger elements.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!--
 #### `$().tooltip(options)`
 
 Attaches a tooltip handler to an element collection.
@@ -205,6 +238,7 @@ Toggles an element's tooltip. **Returns to the caller before the tooltip has act
 #### `.tooltip('dispose')`
 
 Hides and destroys an element's tooltip. Tooltips that use delegation (which are created using [the `selector` option](#options)) cannot be individually destroyed on descendant trigger elements.
+-->
 
 <!--
 ### Annotations <a name="annotations"></a>
