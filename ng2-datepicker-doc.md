@@ -60,13 +60,13 @@ The date range picker can be attached to a text input or embedded to a web page.
 #
 `Example`
 # 
-### Pop-up example
+### Pop-up
 
 `Code examples:`
 #
 `Example`
 # 
-### Inline example
+### Inline
 
 `Code examples:`
 #

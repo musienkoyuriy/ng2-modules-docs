@@ -55,7 +55,7 @@ The `.divider` class is used to separate links inside the dropdown menu with a t
 #
 `Example`
 
-### Disabled menu items < a name="direction"></a>
+### Disable menu items < a name="direction"></a>
 To disable an item in the dropdown menu, use the `.disabled` class:
 #
 `code1`
