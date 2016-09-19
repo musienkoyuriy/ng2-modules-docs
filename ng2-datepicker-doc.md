@@ -5,16 +5,16 @@ You can customize the date and time formats, language, and use selectable date r
 
 # Table of contents
 1. [Importing dependencies](#dependencies)
-2. [Examples](#examples)
+2. [Usage](#usage)
+3. [Examples](#examples)
     1. [Date range picker](#daterange)
     2. [Restrict date range](#restrictrange)
     3. [Single date picker](#singledate)
     4. [Time picker](#singletime)
     5. [Datepicker & Time picker](#datetime)
     6. [Predefined ranges](#predef)
-3. [Localization](#localization)
-4. [Styling](#styling)
-5. [Usage](#usage)
+4. [Localization](#localization)
+5. [Styling](#styling)
 6. [API Reference](#apiref)
     1. [Properties](#properties)
     2. [Events](#events)
@@ -48,6 +48,10 @@ Also, please update system.js config to setup mapping:
   });
 ```
 And you should be ready to go! :)
+## Usage <a name="usage"></a>
+```typescript
+import { DatepickerModule } from 'ng2-bootstrap/ng2-bootstrap';
+```
 ## Examples <a name="examples"></a>
 ### Date Range Picker <a name="daterange"></a>
 The date range picker can be attached to a text input or embedded to a web page. It will use the current value of the input to initialize, and update the input if new dates are chosen.
@@ -128,10 +132,7 @@ Styling allows to customize the calendar theme, so that calendar theme that will
 #
 `Example`
 #  
-## Usage <a name="usage"></a>
-```typescript
-import { DatepickerModule } from 'ng2-bootstrap/ng2-bootstrap';
-```
+
 ## API Reference <a name="apiref"></a>
 ### Properties <a name="properties"></a>
 ```typescript

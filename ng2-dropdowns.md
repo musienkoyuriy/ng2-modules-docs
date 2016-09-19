@@ -5,7 +5,8 @@ A dropdown menu is a toggleable menu that allows the user to choose one value fr
 Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#dropdowns) or [bootstrap 4](http://v4-alpha.getbootstrap.com/components/dropdowns/)
 
 
-1. [Examples](#examples)
+1. [Usage](#usage)
+2. [Examples](#examples)
     1. [Expand direction](#direction)
     2. [Menu alignment](#alignment)
     3. [Headers](#headers)  
@@ -14,13 +15,17 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#dropdowns
     6. [Button state](#btnstate)
     7. [Trigger actions](#trigger) 
     8. [Dropdown Accessibility](#accessibility)
-2. [Styling](#styling)
-3. [Usage](#usage)
+3. [Styling](#styling)
+
 4. [API Reference](#api)
     1. [Properties](#properties)
     2. [Events](#events)
     3. [Methods](#methods)
  
+## Usage <a name="usage"></a>
+```typescript
+import { DropdownModule } from 'ng2-bootstrap/ng2-bootstrap';
+```
 ## Examples <a name="examples"></a>
 ### Expand direction <a name="direction"></a>
 Dropdown menu can expand both upwards and downwards, change the element with class="dropdown" to "dropup". Default behaviour is `dropdown`
@@ -83,10 +88,7 @@ Datepicker uses bootstrap classes, customized CSS or third party add-ons to crea
 `code1`
 #
 `Example`
-## Usage <a name="usage"></a>
-```typescript
-import { DropdownModule } from 'ng2-bootstrap/ng2-bootstrap';
-```
+
 ## API Reference <a name="api"></a>
 ### Properties <a name="properties"></a>
 ```typescript

@@ -8,14 +8,14 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tooltips)
 ## Contents
 
 1. [Overview](#overview)
-2. [Examples](#examples1)
+2. [Usage](#usage)
+3. [Examples](#examples1)
   1. [Positioning](#positioning)
   2. [Attachment points](#attachment)
   3. [Custom Classes & Styling options](#styling)
   4. [Content](#content)  
   5. [Custom Triggers & conditions](#examples4)
   6. [Dynamic Tooltip Pop-up & Text](#examples2)
-3. [Usage](#usage)
 4. [API Reference](#api)
  1. [Properties](#properties)
  2. [Events](#events)
@@ -34,7 +34,10 @@ Things to know when using the tooltip plugin:
 
 Got all that? Great, let's see how they work with some examples.
 
-
+## Usage <a name="usage"></a>
+```typescript
+import { TooltipModule } from 'ng2-bootstrap/ng2-bootstrap';
+```
 ## Examples <a name="examples1"></a>
 
 ### Positioning <a name="positioning"></a>
@@ -123,13 +126,6 @@ Or use a TemplateRef. `Check me out!`
 `code3`
 #
 I can have a custom class. `Check me out!`
-
-
-
-## Usage <a name="usage"></a>
-```typescript
-import { TooltipModule } from 'ng2-bootstrap/ng2-bootstrap';
-```
 
 ## API Reference <a name="api"></a>
 ### Tooltip properties <a name="properties"></a>
