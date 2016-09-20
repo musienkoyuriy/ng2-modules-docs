@@ -12,18 +12,32 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tabs) or 
     3. [Tabs with dropdown menu](#dropdowns)
     4. [Pills](#pills)  
     5. [Vertical Pills](#v_pills_)
-    6. [Pills With Dropdown Menu](#droppills)
+    6. [Pills with dropdown menu](#droppills)
     7. [Toggleable Tabs & Pills ](#toggletab)
-    8. [Tab Accessibility](#tabaccessibility) (?) Accessibility Plugin (?)
+    8. [Tab accessibility](#tabaccessibility) (?) Accessibility Plugin (?)
 3. [Styling](#styling)
 4. [API Reference](#api)
-    1. [Properties](#properties)
-    2. [Events](#events)
-    3. [Methods](#methods)
+    1. [Annotations](#annotations)
+    2. [Tabset properties](#tabset)
+    3. [Tab properties](#tab)
+    4. [Events](#events)
+    5. [Tab heading](#heading)
 
 ## Usage <a name="usage"></a>
+
+Importing tab module:
 ```typescript
 import { TabsModule } from 'ng2-bootstrap/ng2-bootstrap';
+```
+Tabs are created with `<tabset>`:
+```html
+<tabset>
+  <tab heading='Tab 1'>Tab 1 content</tab>
+  <tab>
+    <template tab-heading>Tab 2</template>
+    Tab 2 content
+  </tab>
+</tabset>
 ```
 
 ## Examples <a name="examples"></a>
@@ -62,28 +76,161 @@ Display the menu with Pills instead of Tabs.
 #
 `Example`
 # 
-### Vertical Pills
+### Vertical pills
 Vertical placement of pills-based menu.
 `Code examples:`
 #
 `Example`
 # 
-### Pills With Dropdown Menu
-Display the menu with Pills that can hold dropdown menus.
+### Pills with dropdown Menu
+Display the menu with Pills instead of tabs, that can hold dropdown menus.
 `Code examples:`
 #
 `Example`
 # 
 ### Toggleable Tabs & Pills
-
+To make the tabs toggleable, add the data-toggle="tab" attribute to each link and and data-toggle="pill" for pills respectively.
 `Code examples:`
 #
 `Example`
 # 
  
-### Tab Accessibility
-
+### Tab accessibility
+Tabs support keyboard-only navigation, to enable accessibility, add
 `Code examples:`
 #
 `Example`
 # 
+## Styling
+
+## API Reference
+### Annotations
+```typescript
+// component Tabset
+@Component({
+  selector: 'tabset'
+})
+export class TabsetComponent implements OnInit {
+  @Input() public vertical:boolean;
+  @Input() public justified:boolean;
+  @Input() public type:string;
+}
+
+// directive Tab
+@Directive({ selector: 'tab, [tab]' })
+export class TabDirective implements OnInit, OnDestroy, DoCheck {
+  @Input() public heading:string;
+  @Input() public disabled:boolean;
+  @Input() public removable:boolean;
+
+  /** tab active state toogle */
+  @HostBinding('class.active')
+  @Input() public get active() {}
+
+  @Output() public select:EventEmitter<Tab> = new EventEmitter(false);
+  @Output() public deselect:EventEmitter<Tab> = new EventEmitter(false);
+  @Output() public removed:EventEmitter<Tab> = new EventEmitter(false);
+}
+
+// directive TabHeading
+@Directive({selector: '[tab-heading]'})
+export class TabHeadingDirective {}
+```
+
+### Tabset properties
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Tabset property</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>vertical (?boolean=false)</td>
+        <td>if true tabs will be placed vertically</td>
+      </tr>
+    </tbody>
+     <tbody>
+          <tr>
+            <td>justified (?boolean=false)</td>
+            <td>if true tabs fill the container and have a consistent width</td>
+          </tr>
+        </tbody>
+     <tbody>
+          <tr>
+            <td>type (?string='tabs')</td>
+            <td>navigation context class: 'tabs' or 'pills'</td>
+          </tr>
+        </tbody>        
+  </table>
+</div>
+
+### Tab properties
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Tab property</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>heading (string)</td>
+        <td>tab header text</td>
+      </tr>
+    </tbody>
+     <tbody>
+          <tr>
+            <td>active (?boolean=false)</td>
+            <td> if tab is active equals true, or set true to activate tab</td>
+          </tr>
+        </tbody>
+     <tbody>
+          <tr>
+            <td>disabled (?boolean=false)</td>
+            <td>if true tab can not be activated</td>
+          </tr>
+        </tbody>        
+     <tbody>
+          <tr>
+            <td>removable (?boolean=false) </td>
+            <td>if true tab can be removed, additional button will appear</td>
+          </tr>
+        </tbody>  
+  </table>
+</div>
+
+### Tab events
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Tab events</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>select</td>
+        <td>fired when tab became active, $event:Tab equals to selected instance of Tab component</td>
+      </tr>
+    </tbody>
+     <tbody>
+          <tr>
+            <td>deselect</td>
+            <td>fired when tab became inactive, $event:Tab equals to deselected instance of Tab component</td>
+          </tr>
+        </tbody>
+     <tbody>
+          <tr>
+            <td>removed</td>
+            <td>fired before tab will be removed</td>
+          </tr>
+        </tbody>        
+  </table>
+</div>
