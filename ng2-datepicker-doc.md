@@ -176,7 +176,7 @@ Styling allows to customize the calendar theme, so that calendar GUI will corres
      <tbody>
           <tr>
             <td>showWeeks (?boolean=true)</td>
-            <td>if false week numbers will be hidden</td>
+            <td>if **false** week numbers will be hidden</td>
           </tr>
         </tbody>    
      <tbody>
@@ -269,7 +269,7 @@ Styling allows to customize the calendar theme, so that calendar GUI will corres
 
 
 ### Events <a name="events"></a>
-
+Datepicker triggers a number of events in certain circumstances. All events have extra data attached to the event object that is passed to any event handlers
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
     <thead>
@@ -324,4 +324,7 @@ Styling allows to customize the calendar theme, so that calendar GUI will corres
 </div>
 
 ### Methods <a name="methods"></a>
-
+Methods are called on a datepicker by calling the datepicker function with a string first argument, followed by any arguments the method takes
+```typescript
+$('.datepicker').datepicker('method', arg1, arg2);
+```
