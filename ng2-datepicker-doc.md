@@ -126,7 +126,7 @@ Datepicker supports calendar language and format (English / Western formatting i
 `Example`
 # 
 ## Styling <a name="styling"></a>
-Styling allows to customize the calendar theme, so that calendar theme that will correspond to overall website design. To  designbs-date-picker.css
+Styling allows to customize the calendar theme, so that calendar GUI will correspond to overall website design. To add some style, simply edit designbs-date-picker.css
 
 `Code examples:`
 #
@@ -135,70 +135,193 @@ Styling allows to customize the calendar theme, so that calendar theme that will
 
 ## API Reference <a name="apiref"></a>
 ### Properties <a name="properties"></a>
-```typescript
-ngModel (:Date) - binds to date
-datepickerMode (?string='day') - sets datepicker mode, supports: day, month, year
-minDate (?Date=null) - oldest selectable date
-maxDate (?Date=null) - latest selectable date
-dateDisabled (?Array<{date:Date, mode:string}>) - array of disabled dates if mode is day, or years, etc.
-customClass (?Array<{date:Date, mode:string, clazz:string}>) - array of custom css classes to be applied to targeted dates
-showWeeks (?boolean=true) - if false week numbers will be hidden
-startingDay (?number=0) - starting day of the week from 0-6 (0=Sunday, ..., 6=Saturday).
-initDate (?Date) - default date to show if ng-model value is not specified
-minMode (?string='day') - set lower datepicker mode, supports: day, month, year
-maxMode (?string='year') - sets upper datepicker mode, supports: day, month, year
-formatDay (?string='dd') - format of day in month
-formatMonth (?string='MMMM') - format of month in year
-formatMear (?string='yyyy') - format of year in year range
-formatDayHeader (?string='EEE') - format of day in week header
-formatDayTitle (?string='MMMM yyyy') - format of title when selecting day
-formatMonthTitle (?string='yyyy') - format of title when selecting month
-yearRange (?number=20) - number of years displayed in year selection
-shortcutPropagation (?boolean=false) - if true shortcut`s event propagation will be disabled
-onlyCurrentMonth (?boolean=false) - if true only dates from the currently displayed month will be shown
-```
-### Events <a name="events"></a>
-```typescript
-```
-### Methods <a name="methods"></a>
-```typescript
-```
-<!--
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Properties</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ngModel (:Date)</td>
+        <td>binds to date</td>
+      </tr>
+    </tbody>
+     <tbody>
+          <tr>
+            <td>datepickerMode (?string='day')</td>
+            <td>sets datepicker mode, supports: day, month, year, time</td>
+          </tr>
+        </tbody>
+     <tbody>
+          <tr>
+            <td>minDate (?Date=null)</td>
+            <td>oldest selectable date</td>
+          </tr>
+        </tbody>       
+     <tbody>
+          <tr>
+            <td>maxDate (?Date=null)</td>
+            <td>latest selectable date</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>customClass (?Array<{date:Date, mode:string, clazz:string}>)</td>
+            <td>array of custom css classes to be applied to targeted dates</td>
+          </tr>
+        </tbody>
+     <tbody>
+          <tr>
+            <td>showWeeks (?boolean=true)</td>
+            <td>if false week numbers will be hidden</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>startingDay (?number=0)</td>
+            <td>starting day of the week from 0-6 (0=Sunday, ..., 6=Saturday)</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>initDate (?Date)</td>
+            <td>default date to show if ng-model value is not specified</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>minMode (?string='day')</td>
+            <td>set lower datepicker mode, supports: time, day, month, year</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>maxMode (?string='year')</td>
+            <td>sets upper datepicker mode, supports: time, day, month, year</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>formatDay (?string='dd')</td>
+            <td>format of day in month</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>formatMonth (?string='MMMM')</td>
+            <td>format of month in year</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>formatYear (?string='yyyy')</td>
+            <td>format of year in year range</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>formatYear (?string='HH:mm:ss')</td>
+            <td>Format of time in day range</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>formatDayHeader (?string='EEE')</td>
+            <td>format of day in week header</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>formatDayTitle (?string='MMMM yyyy')</td>
+            <td>format of title when selecting day</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>formatMonthTitle (?string='yyyy')</td>
+            <td>format of title when selecting month</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>yearRange (?number=20)</td>
+            <td>number of years displayed in year selection</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>shortcutPropagation (?boolean=false)</td>
+            <td>if true shortcut`s event propagation will be disabled</td>
+          </tr>
+        </tbody>    
+     <tbody>
+          <tr>
+            <td>onlyCurrentMonth (?boolean=false)</td>
+            <td>if true only dates from the currently displayed month will be shown</td>
+          </tr>
+        </tbody>    
+  </table>
+</div>
 
-### Usage
-```javascript
-import { DatepickerModule } from 'ng2-bootstrap/ng2-bootstrap';
-// or
-import { DatepickerModule } from 'ng2-bootstrap/components/datepicker';
-```
-### Annotations
-```javascript
-// component DatePicker
-@Component({
-  selector: 'datepicker[ngModel], [datepicker][ngModel]'
-})
-```
-# Options, Methods & Events
-As the examples demonstrate above ```ng2-bootstrap datepicker``` has many useful options:
-```javascript
-ngModel (:Date) - binds to date
-datepickerMode (?string='day') - sets datepicker mode, supports: day, month, year
-minDate (?Date=null) - oldest selectable date
-maxDate (?Date=null) - latest selectable date
-dateDisabled (?Array<{date:Date, mode:string}>) - array of disabled dates if mode is day, or years, etc.
-customClass (?Array<{date:Date, mode:string, clazz:string}>) - array of custom css classes to be applied to targeted dates
-showWeeks (?boolean=true) - if false week numbers will be hidden
-startingDay (?number=0) - starting day of the week from 0-6 (0=Sunday, ..., 6=Saturday).
-initDate (?Date) - default date to show if ng-model value is not specified
-minMode (?string='day') - set lower datepicker mode, supports: day, month, year
-maxMode (?string='year') - sets upper datepicker mode, supports: day, month, year
-formatDay (?string='dd') - format of day in month
-formatMonth (?string='MMMM') - format of month in year
-formatMear (?string='yyyy') - format of year in year range
-formatDayHeader (?string='EEE') - format of day in week header
-formatDayTitle (?string='MMMM yyyy') - format of title when selecting day
-formatMonthTitle (?string='yyyy') - format of title when selecting month
-yearRange (?number=20) - number of years displayed in year selection
-shortcutPropagation (?boolean=false) - if true shortcut`s event propagation will be disabled
-onlyCurrentMonth (?boolean=false) - if true only dates from the currently displayed month will be shown
-```-->
+
+
+### Events <a name="events"></a>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Events</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>show</td>
+        <td>fired when the date picker is displayed</td>
+      </tr>
+    </tbody>
+     <tbody>
+          <tr>
+            <td>hide</td>
+            <td>fired when the date picker is hidden</td>
+          </tr>
+        </tbody>
+     <tbody>
+          <tr>
+            <td>changeTime</td>
+            <td>fired when time is changed</td>
+          </tr>
+        </tbody>  
+    <tbody>
+           <tr>
+             <td>changeDate</td>
+             <td>fired when the date is changed</td>
+           </tr>
+         </tbody>  
+    <tbody>
+           <tr>
+             <td>changeMonth</td>
+             <td>fired when the view month is changed from year view</td>
+           </tr>
+         </tbody>    
+    <tbody>
+           <tr>
+             <td>changeYear</td>
+             <td>fired when the view year is changed from decade view</td>
+           </tr>
+         </tbody>
+    <tbody>
+           <tr>
+             <td>clearDate</td>
+             <td>red when the date is cleared, normally when the “clear” button (enabled with the clearBtn option) is pressed</td>
+           </tr>
+         </tbody>
+  </table>
+</div>
+
+### Methods <a name="methods"></a>
+

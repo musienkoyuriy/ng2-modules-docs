@@ -101,7 +101,16 @@ Tabs support keyboard-only navigation, to enable accessibility, add
 `Example`
 # 
 ## Styling <a name="styling"></a>
-
+### Tabs styling
+`Code examples:`
+#
+`Example`
+# 
+### Tab content area styling
+`Code examples:`
+#
+`Example`
+# 
 ## API Reference <a name="api"></a>
 ### Annotations <a name="annotations"></a>
 ```typescript
