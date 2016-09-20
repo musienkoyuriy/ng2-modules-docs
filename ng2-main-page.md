@@ -61,13 +61,14 @@ typings init
 typings install moment --save
 ```
 
-or fork
+**How to use it with webpack?**
 
-How to use it with webpack?
 Please refer to [`readme`](https://github.com/valor-software/ng2-bootstrap#with-webpack-angularclassangular2-webpack-starter)
 
-How to use it with system.js and angular2 quick start
+**How to use it with system.js and angular2 quick start**
+
 Please check this [`instructions`](https://github.com/valor-software/ng2-bootstrap#quick-start)
 
-Reading documentation
+**Reading documentation**
+
 Each `ng2-bootstrap` component has an API and annotation docs, examples and a working demo. Each property and event have type annotation and a default value if any.
