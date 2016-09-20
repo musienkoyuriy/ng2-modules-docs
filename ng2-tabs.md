@@ -8,20 +8,19 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tabs) or 
 1. [Usage](#usage)
 2. [Examples](#examples)
     1. [Multiple tabs](#multiple)
-    2. [Dynamic tabs]
+    2. [Dynamic tabs](#dyntabs)
     3. [Tabs with dropdown menu](#dropdowns)
     4. [Pills](#pills)  
     5. [Vertical Pills](#v_pills_)
     6. [Pills with dropdown menu](#droppills)
-    7. [Toggleable Tabs & Pills ](#toggletab)
+    7. [Toggleable Tabs & Pills ](#togglepiltab)
     8. [Tab accessibility](#tabaccessibility) (?) Accessibility Plugin (?)
 3. [Styling](#styling)
 4. [API Reference](#api)
     1. [Annotations](#annotations)
     2. [Tabset properties](#tabset)
-    3. [Tab properties](#tab)
+    3. [Tab properties](#tabprop)
     4. [Events](#events)
-    5. [Tab heading](#heading)
 
 ## Usage <a name="usage"></a>
 
@@ -48,7 +47,7 @@ Create a simple tab-based navigation bar.
 #
 `Example`
 #  
-### Dynamic tabs
+### Dynamic tabs <a name="dyntabs"></a>
 #### HTML tab heading
 Tab menu headings can contain HTML.
 
@@ -63,48 +62,48 @@ Create a closable tab.
 #
 `Example`
 #   
-### Tabs with dropdown menu
+### Tabs with dropdown menu <a name="dropdowns"></a>
 Tab-based navigation bar can hold dropdown menus.
 `Code examples:`
 #
 `Example`
 #  
 
-### Pills
+### Pills <a name="pills"></a>
 Display the menu with Pills instead of Tabs.
 `Code examples:`
 #
 `Example`
 # 
-### Vertical pills
+### Vertical pills <a name="v_pills"></a>
 Vertical placement of pills-based menu.
 `Code examples:`
 #
 `Example`
 # 
-### Pills with dropdown Menu
+### Pills with dropdown Menu <a name="droppills"></a>
 Display the menu with Pills instead of tabs, that can hold dropdown menus.
 `Code examples:`
 #
 `Example`
 # 
-### Toggleable Tabs & Pills
+### Toggleable Tabs & Pills <a name="togglepiltab"></a>
 To make the tabs toggleable, add the data-toggle="tab" attribute to each link and and data-toggle="pill" for pills respectively.
 `Code examples:`
 #
 `Example`
 # 
  
-### Tab accessibility
+### Tab accessibility <a name="tabaccessibility"></a>
 Tabs support keyboard-only navigation, to enable accessibility, add
 `Code examples:`
 #
 `Example`
 # 
-## Styling
+## Styling <a name="styling"></a>
 
-## API Reference
-### Annotations
+## API Reference <a name="api"></a>
+### Annotations <a name="annotations"></a>
 ```typescript
 // component Tabset
 @Component({
@@ -137,7 +136,7 @@ export class TabDirective implements OnInit, OnDestroy, DoCheck {
 export class TabHeadingDirective {}
 ```
 
-### Tabset properties
+### Tabset properties <a name="tabset"></a>
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
@@ -168,7 +167,7 @@ export class TabHeadingDirective {}
   </table>
 </div>
 
-### Tab properties
+### Tab properties <a name="tabprop"></a>
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
     <thead>
@@ -204,7 +203,7 @@ export class TabHeadingDirective {}
   </table>
 </div>
 
-### Tab events
+### Tab events <a name="events"></a>
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
