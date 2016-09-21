@@ -65,7 +65,7 @@ typings install moment --save
 
 Please refer to [`readme`](https://github.com/valor-software/ng2-bootstrap#with-webpack-angularclassangular2-webpack-starter)
 
-**How to use it with system.js and angular2 quick start**
+**How to use it with system.js and angular2-quickstart?**
 
 Please check this [`instructions`](https://github.com/valor-software/ng2-bootstrap#quick-start)
 
