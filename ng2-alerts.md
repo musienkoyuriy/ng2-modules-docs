@@ -115,7 +115,7 @@ Alerts have `dismiss` option. Build on any alert by adding an optional `.alert-d
    </table>
 </div>
 
-### Methods.alert("close")
+### Methods
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
