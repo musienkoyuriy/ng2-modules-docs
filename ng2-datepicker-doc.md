@@ -324,7 +324,55 @@ Datepicker triggers a number of events in certain circumstances. All events have
 </div>
 
 ### Methods <a name="methods"></a>
-Methods are called on a datepicker by calling the datepicker function with a string first argument, followed by any arguments the method takes
-```typescript
-$('.datepicker').datepicker('method', arg1, arg2);
-```
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Methods</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>destroy</td>
+        <td>fired when the date picker is displayed</td>
+      </tr>
+    </tbody>
+     <tbody>
+          <tr>
+            <td>show</td>
+            <td>fired when the date picker is hidden</td>
+          </tr>
+        </tbody>
+     <tbody>
+          <tr>
+            <td>hide</td>
+            <td>fired when time is changed</td>
+          </tr>
+        </tbody>  
+    <tbody>
+           <tr>
+             <td>update</td>
+             <td>fired when the date is changed</td>
+           </tr>
+         </tbody>  
+    <tbody>
+           <tr>
+             <td>setDate</td>
+             <td>fired when the view month is changed from year view</td>
+           </tr>
+         </tbody>    
+    <tbody>
+           <tr>
+             <td>setUTCDate</td>
+             <td>fired when the view year is changed from decade view</td>
+           </tr>
+         </tbody>
+    <tbody>
+           <tr>
+             <td>clearDate</td>
+             <td>red when the date is cleared, normally when the “clear” button (enabled with the clearBtn option) is pressed</td>
+           </tr>
+         </tbody>
+  </table>
+</div>

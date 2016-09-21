@@ -17,9 +17,10 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tooltips)
   5. [Custom Triggers & conditions](#examples4)
   6. [Dynamic Tooltip Pop-up & Text](#examples2)
 4. [API Reference](#api)
- 1. [Properties](#properties)
- 2. [Events](#events)
- 3. [Methods](#methods)
+    1. [Properties](#properties)
+    2. [Events](#events)
+    3. [Methods](#methods)
+    4. [Annotations](#annotations)
 
 ## Overview <a name="overview"></a>
 
@@ -208,35 +209,7 @@ I can have a custom class. `Check me out!`
     </tbody>
   </table>
 </div>
-<!--
-#### `$().tooltip(options)`
 
-Attaches a tooltip handler to an element collection.
-
-#### `.tooltip('show')`
-
-Reveals an element's tooltip. **Returns to the caller before the tooltip has actually been shown** (i.e. before the `shown.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip. Tooltips with zero-length titles are never displayed.
-
-
-
-#### `.tooltip('hide')`
-
-Hides an element's tooltip. **Returns to the caller before the tooltip has actually been hidden** (i.e. before the `hidden.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip.
-
-
-
-#### `.tooltip('toggle')`
-
-Toggles an element's tooltip. **Returns to the caller before the tooltip has actually been shown or hidden** (i.e. before the `shown.bs.tooltip` or `hidden.bs.tooltip` event occurs). This is considered a "manual" triggering of the tooltip.
-
-
-
-#### `.tooltip('dispose')`
-
-Hides and destroys an element's tooltip. Tooltips that use delegation (which are created using [the `selector` option](#options)) cannot be individually destroyed on descendant trigger elements.
--->
-
-<!--
 ### Annotations <a name="annotations"></a>
 ```typescript
 // class Tooltip implements OnInit
@@ -254,6 +227,7 @@ export class TooltipDirective {
 ```
 
 
+<!--
 ### Markup <a name="markup"></a>
 ```
 <div class="form-group">
@@ -448,3 +422,4 @@ There are certain options which may be passed to tooltip via data attributes or 
 
 
 
+-->
