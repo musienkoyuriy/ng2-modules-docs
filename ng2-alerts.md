@@ -6,22 +6,22 @@ Provides contextual feedback messages to create alert messages like success, war
 2. [Examples](#examples)
     1. [Types](#types)
     2. [Content](#content)
-    3. [Dismissible alerts](#)
+    3. [Dismissible alerts](#dismiss)
 3. [API Reference](#api)
     1. [Properties](#properties)
     2. [Events](#events)
     3. [Methods](#methods)
     
-## Usage
+## Usage <a name="usage"></a>
 ```typescript
 import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 ```
-## Examples
+## Examples <a name="examples"></a>
 Wrap any text and an optional dismiss button in .alert and one of the four contextual classes (e.g., .alert-success) for basic alert messages.
 
 > Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.
 
-## Types
+## Types <a name="types"></a>
 There are four types of alerts: 
 ### `alert-success`
 ```html
@@ -44,14 +44,14 @@ There are four types of alerts:
 ```
 `example`  
 ###
-## Content
+## Content <a name="content"></a>
 Alerts can contain various content, starting from links, to HTML and TemplateRef.
 
 Use the .alert-link utility class to quickly provide matching colored links within any alert.
 ```html
 <a href="#" class="alert-link">...</a>
 ```
-## Dismissible alerts
+## Dismissible alerts <a name="dismiss"></a>
 Alerts have `dismiss` option. Build on any alert by adding an optional `.alert-dismissible` and add additional close button.
 ```html
 <div class="alert alert-warning alert-dismissible" role="alert">
@@ -60,8 +60,8 @@ Alerts have `dismiss` option. Build on any alert by adding an optional `.alert-d
 </div>
 ```
 
-## API Reference
-### Properties
+## API Reference <a name="api"></a>
+### Properties <a name="events"></a>
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
     <thead>
@@ -91,7 +91,7 @@ Alerts have `dismiss` option. Build on any alert by adding an optional `.alert-d
   </table>
 </div>
 
-### Events
+### Events <a name="events"></a>
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
     <thead>
@@ -115,7 +115,7 @@ Alerts have `dismiss` option. Build on any alert by adding an optional `.alert-d
    </table>
 </div>
 
-### Methods
+### Methods <a name="methods"></a>
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
