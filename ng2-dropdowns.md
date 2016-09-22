@@ -20,6 +20,7 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#dropdowns
     1. [Properties](#properties)
     2. [Events](#events)
     3. [Methods](#methods)
+    4. [Annotations](#annotations)
  
 ## Usage <a name="usage"></a>
 ```typescript
@@ -191,5 +192,39 @@ Datepicker uses bootstrap classes, customized CSS or third party add-ons to crea
   </table>
 </div>
 
+### Annotations <a name="annotations"></a>
+```typescript
+// directive Dropdown
+@Directive({
+  selector: '[dropdown]',
+  exportAs: 'bs-dropdown'
+})
+export class Dropdown implements OnInit, OnDestroy {
+  @HostBinding('class.open')
+  @Input() public get isOpen():boolean {}
+  @Input() public autoClose:string;
+  @Input() public keyboardNav:boolean;
+// enum string: ['nonInput', always', 'outsideClick', 'disabled']
+  @Input() public appendToBody:boolean;
+  @Output() public onToggle:EventEmitter<boolean>;
+}
 
+// directive DropdownToggle
+@Directive({ 
+  selector: '[dropdownToggle]',
+  exportAs: 'bs-dropdown-toggle'
+})
+export class DropdownToggle implements OnInit {
+  @HostBinding('class.disabled')
+  @Input() public isDisabled:boolean = false;
+
+  @HostBinding('class.dropdown-toggle')
+  @Input() public addToggleClass:boolean = false;
+
+  @HostBinding('attr.aria-expanded')
+  public get isOpen() {}
+  @HostListener('click', ['$event'])
+  public toggleDropdown(event:MouseEvent) {}
+}
+````
 

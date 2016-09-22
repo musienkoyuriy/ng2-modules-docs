@@ -17,10 +17,10 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#tabs) or 
     8. [Tab accessibility](#tabaccessibility) (?) Accessibility Plugin (?)
 3. [Styling](#styling)
 4. [API Reference](#api)
-    1. [Annotations](#annotations)
-    2. [Tabset properties](#tabset)
-    3. [Tab properties](#tabprop)
-    4. [Events](#events)
+    1. [Tabset properties](#tabset)
+    2. [Tab properties](#tabprop)
+    3. [Events](#events)
+    4. [Annotations](#annotations)
 
 ## Usage <a name="usage"></a>
 
@@ -112,38 +112,6 @@ Tabs support keyboard-only navigation, to enable accessibility, add
 `Example`
 # 
 ## API Reference <a name="api"></a>
-### Annotations <a name="annotations"></a>
-```typescript
-// component Tabset
-@Component({
-  selector: 'tabset'
-})
-export class TabsetComponent implements OnInit {
-  @Input() public vertical:boolean;
-  @Input() public justified:boolean;
-  @Input() public type:string;
-}
-
-// directive Tab
-@Directive({ selector: 'tab, [tab]' })
-export class TabDirective implements OnInit, OnDestroy, DoCheck {
-  @Input() public heading:string;
-  @Input() public disabled:boolean;
-  @Input() public removable:boolean;
-
-  /** tab active state toogle */
-  @HostBinding('class.active')
-  @Input() public get active() {}
-
-  @Output() public select:EventEmitter<Tab> = new EventEmitter(false);
-  @Output() public deselect:EventEmitter<Tab> = new EventEmitter(false);
-  @Output() public removed:EventEmitter<Tab> = new EventEmitter(false);
-}
-
-// directive TabHeading
-@Directive({selector: '[tab-heading]'})
-export class TabHeadingDirective {}
-```
 
 ### Tabset properties <a name="tabset"></a>
 
@@ -242,3 +210,36 @@ export class TabHeadingDirective {}
         </tbody>        
   </table>
 </div>
+
+### Annotations <a name="annotations"></a>
+```typescript
+// component Tabset
+@Component({
+  selector: 'tabset'
+})
+export class TabsetComponent implements OnInit {
+  @Input() public vertical:boolean;
+  @Input() public justified:boolean;
+  @Input() public type:string;
+}
+
+// directive Tab
+@Directive({ selector: 'tab, [tab]' })
+export class TabDirective implements OnInit, OnDestroy, DoCheck {
+  @Input() public heading:string;
+  @Input() public disabled:boolean;
+  @Input() public removable:boolean;
+
+  /** tab active state toogle */
+  @HostBinding('class.active')
+  @Input() public get active() {}
+
+  @Output() public select:EventEmitter<Tab> = new EventEmitter(false);
+  @Output() public deselect:EventEmitter<Tab> = new EventEmitter(false);
+  @Output() public removed:EventEmitter<Tab> = new EventEmitter(false);
+}
+
+// directive TabHeading
+@Directive({selector: '[tab-heading]'})
+export class TabHeadingDirective {}
+```

@@ -11,7 +11,7 @@ Provides contextual feedback messages to create alert messages like success, war
     1. [Properties](#properties)
     2. [Events](#events)
     3. [Methods](#methods)
-    
+    4. [Annotations](#annotations)
 ## Usage <a name="usage"></a>
 ```typescript
 import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
@@ -133,3 +133,20 @@ Alerts have `dismiss` option. Build on any alert by adding an optional `.alert-d
     </tbody>
    </table>
 </div>
+
+### Annotations <a name="annotations"></a>
+
+```typescript
+// class Alert
+@Component({
+  selector: 'alert',
+  template: ALERT_TEMPLATE
+})
+export class AlertComponent implements OnInit {
+  @Input() public type:string = 'warning';
+  @Input() public dismissible:boolean;
+  @Input() public dismissOnTimeout:number;
+
+  @Output() public close:EventEmitter<Alert> = new EventEmitter(false);
+}
+```

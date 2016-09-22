@@ -67,7 +67,7 @@ By default, the tooltip will appear on top of the element.
 `Example`
 # 
 ### Attachment points <a name="attachment"></a>
-Tooltips can be attached to any DOM element, whether it is <anchor>, input field or a button. 
+Tooltips can be attached to any DOM element, whether it is <anchor> or anything else, input field or a button. 
 
 `Code examples:`
 #

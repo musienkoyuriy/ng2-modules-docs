@@ -19,6 +19,7 @@ You can customize the date and time formats, language, and use selectable date r
     1. [Properties](#properties)
     2. [Events](#events)
     3. [Methods](#methods)
+    4. [Annotations](#annotations)
 
 
 ## Importing dependencies <a name="dependencies"></a>
@@ -376,3 +377,11 @@ Datepicker triggers a number of events in certain circumstances. All events have
          </tbody>
   </table>
 </div>
+
+### Annotations <a name="annotations"></a>
+```typescript
+// component DatePicker
+@Component({
+  selector: 'datepicker[ngModel], [datepicker][ngModel]'
+})
+```
