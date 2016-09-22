@@ -6,7 +6,7 @@ Rating component that will take care of visualising a star rating bar
     1. [Static rating](#static)
     2. [Dynamic rating](#dynamic)
     3. [Custom icons](#icons)
-4. [API Reference](#api)
+3. [API Reference](#api)
     1. [Properties](#properties)
     2. [Events](#events)
     3. [Methods](#methods)
