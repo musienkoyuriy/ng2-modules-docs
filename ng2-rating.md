@@ -1,11 +1,11 @@
 # Rating
 Rating component that will take care of visualising a star rating bar
 
-1. Usage(#usage)
-2. Examples(#examples)
-    1. Static rating
-    2. Dynamic rating
-    3. Custom icons
+1. [Usage](#usage)
+2. [Examples](#examples)
+    1. [Static rating](#static)
+    2. [Dynamic rating](#dynamic)
+    3. [Custom icons](#icons)
 4. [API Reference](#api)
     1. [Properties](#properties)
     2. [Events](#events)
@@ -16,17 +16,17 @@ Rating component that will take care of visualising a star rating bar
 ```typescript
 import { RatingModule } from 'ng2-bootstrap/ng2-bootstrap';
 ```
-## Examples
-### Static rating
+## Examples <a name="examples1"></a>
+### Static rating <a name="static"></a>
 Render a rating widget for display purpose only and prevent any editing ability for the user.
-### Dynamic rating
+### Dynamic rating <a name="dynamic"></a>
 Automatically convert any input to a bootstrap star rating control 
 Drag and slide across for changing ratings for better effects on touch input devices.
-### Custom icons
+### Custom icons <a name="icons"></a>
 ng2-rating supports any glyphicons instead of stars.
 Note: Bootstrap 4 does not include glyphicons anymore, so if you want to continue use this font, you will need to add a link to [glyphicons.css](https://github.com/valor-software/ng2-bootstrap/blob/master/demo/assets/css/glyphicons.css)
-## API Reference
-### Properties
+## API Reference <a name="api"></a>
+### Properties <a name="properties"></a>
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
     <thead>
@@ -78,7 +78,7 @@ Note: Bootstrap 4 does not include glyphicons anymore, so if you want to continu
   </table>
 </div>
 
-### Events
+### Events <a name="events"></a>
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
@@ -101,7 +101,7 @@ Note: Bootstrap 4 does not include glyphicons anymore, so if you want to continu
   </table>
 </div>
 
-### Methods
+### Methods <a name="methods"></a>
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
@@ -140,7 +140,7 @@ Note: Bootstrap 4 does not include glyphicons anymore, so if you want to continu
   </table>
 </div>
 
-### Annotations
+### Annotations <a name="annotations"></a>
 
 ```typescript
 // class Rating implements on Init
