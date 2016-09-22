@@ -91,16 +91,71 @@ Datepicker uses bootstrap classes, customized CSS or third party add-ons to crea
 
 ## API Reference <a name="api"></a>
 ### Properties <a name="properties"></a>
-```typescript
-isOpen (?boolean=false) - if true dropdown will be opened
-autoClose (?string='nonInput') - behaviour vary:
-nonInput - (default) automatically closes the dropdown when any of its elements is clicked — as long as the clicked element is not an input or a textarea.
-always - automatically closes the dropdown when any of its elements is clicked
-outsideClick - closes the dropdown automatically only when the user clicks any element outside the dropdown
-disabled - disables the auto close. You can then control the open/close status of the dropdown manually, by using is-open. Please notice that the dropdown will still close if the toggle is clicked, the esc key is pressed or another dropdown is open
-keyboardNav (?boolean=false) - if true will enable navigation of dropdown list elements with the arrow keys
-appendToBody (not yet tested) (?boolean=false) - if true dropdownMenu content will be appended to the body. This is useful when the dropdown button is inside a div with overflow: hidden, and the menu would otherwise be hidden
-```
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Properties</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>isOpen (?boolean=false)</td>
+        <td>if true, dropdown will be opened</td>
+      </tr>
+    </tbody>
+    <tbody>
+          <tr>
+            <td>autoClose (?string='nonInput')</td>
+            <td>behaviour vary, see lower entries for options &darr; </td>
+          </tr>
+        </tbody>
+        <tbody>
+              <tr>
+                <td>nonInput</td>
+                <td>(default) automatically closes the dropdown when any of its elements is clicked — as long as the clicked element is not an input or a text area.</td>
+              </tr>
+            </tbody>
+            <tbody>
+        <tbody>
+              <tr>
+                <td>always</td>
+                <td>automatically closes the dropdown when any of its elements is clicked</td>
+              </tr>
+            </tbody>
+            <tbody>
+        <tbody>
+              <tr>
+                <td>outsideClick</td>
+                <td>closes the dropdown automatically only when the user clicks any element outside the dropdown</td>
+              </tr>
+            </tbody>
+            <tbody>
+        <tbody>
+              <tr>
+                <td>disabled</td>
+                <td>disables the auto close. You can then control the open/close status of the dropdown manually, by using is-open. Please notice that the dropdown will still close if the toggle is clicked, the esc key is pressed or another dropdown is open</td>
+              </tr>
+            </tbody>
+            <tbody>
+        <tbody>
+              <tr>
+                <td>keyboardNav (?boolean=false)</td>
+                <td>if true, will enable navigation of dropdown list elements with the arrow keys</td>
+              </tr>
+            </tbody>
+        <tbody>
+              <tr>
+                <td>appendToBody (not yet tested) (?boolean=false)</td>
+                <td>if true, dropdown menu content will be appended to the body. This is useful when the dropdown button is inside a div with overflow: hidden, and the menu would otherwise be hidden</td>
+              </tr>
+            </tbody>
+            <tbody>
+  </table>
+</div>
+
 ### Events <a name="events"></a>
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
