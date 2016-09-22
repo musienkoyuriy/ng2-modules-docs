@@ -16,7 +16,6 @@ Base specifications: [bootstrap 3](http://getbootstrap.com/javascript/#dropdowns
     7. [Trigger actions](#trigger) 
     8. [Dropdown Accessibility](#accessibility)
 3. [Styling](#styling)
-
 4. [API Reference](#api)
     1. [Properties](#properties)
     2. [Events](#events)
@@ -29,53 +28,53 @@ import { DropdownModule } from 'ng2-bootstrap/ng2-bootstrap';
 ## Examples <a name="examples"></a>
 ### Expand direction <a name="direction"></a>
 Dropdown menu can expand both upwards and downwards, change the element with class="dropdown" to "dropup". Default behaviour is `dropdown`
-#
-`code1`
+
+`Code examples:`
 #
 `Example`
-
+# 
 ### Menu aligment <a name="alignment"></a>
 By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add `.dropdown-menu-right` to a `.dropdown-menu` to right-align the dropdown menu.
-#
-`code1`
+
+`Code examples:`
 #
 `Example`
-
+# 
 ### Headers <a name="direction"></a>
 The `.dropdown-header` class is used to add headers inside the dropdown menu:
-#
-`code1`
+
+`Code examples:`
 #
 `Example`
-
+# 
 ### Dividers <a name="direction"></a>
 The `.divider` class is used to separate links inside the dropdown menu with a thin horizontal border:
-#
-`code1`
+
+`Code examples:`
 #
 `Example`
-
+# 
 ### Disable menu items < a name="direction"></a>
 To disable an item in the dropdown menu, use the `.disabled` class:
-#
-`code1`
+
+`Code examples:`
 #
 `Example`
-
+# 
 ### Button state <a name="direction"></a>
 To disable the button itself, add `disabled` class to the button:
-#
-`code1`
+
+`Code examples:`
 #
 `Example`
-
+# 
 ### Trigger actions <a name="direction"></a>
 Set custom actions to trigger dropdown action.
-# 
-`code1`
+
+`Code examples:`
 #
 `Example`
-
+# 
 ### Dropdown Accessibility <a name="direction"></a>
 Dropdowns have native support for keyboard navigation. Just add role="menu" to your dropdown-menu
 #
@@ -84,11 +83,11 @@ Dropdowns have native support for keyboard navigation. Just add role="menu" to y
 `Example`
 ## Styling <a name="styling"></a>
 Datepicker uses bootstrap classes, customized CSS or third party add-ons to create beautiful looking dropdown menus
-#
-`code1`
+
+`Code examples:`
 #
 `Example`
-
+# 
 ## API Reference <a name="api"></a>
 ### Properties <a name="properties"></a>
 
