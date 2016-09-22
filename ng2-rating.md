@@ -19,12 +19,27 @@ import { RatingModule } from 'ng2-bootstrap/ng2-bootstrap';
 ## Examples <a name="examples1"></a>
 ### Static rating <a name="static"></a>
 Render a rating widget for display purpose only and prevent any editing ability for the user.
+
+`Code examples:`
+#
+`Example`
+# 
 ### Dynamic rating <a name="dynamic"></a>
 Automatically convert any input to a bootstrap star rating control 
 Drag and slide across for changing ratings for better effects on touch input devices.
+
+`Code examples:`
+#
+`Example`
+# 
 ### Custom icons <a name="icons"></a>
 ng2-rating supports any glyphicons instead of stars.
-Note: Bootstrap 4 does not include glyphicons anymore, so if you want to continue use this font, you will need to add a link to [glyphicons.css](https://github.com/valor-software/ng2-bootstrap/blob/master/demo/assets/css/glyphicons.css)
+>Note: Bootstrap 4 does not include glyphicons anymore, so if you want to continue use this font, you will need to add a link to [glyphicons.css](https://github.com/valor-software/ng2-bootstrap/blob/master/demo/assets/css/glyphicons.css)
+
+`Code examples:`
+#
+`Example`
+# 
 ## API Reference <a name="api"></a>
 ### Properties <a name="properties"></a>
 <div class="table-responsive">
