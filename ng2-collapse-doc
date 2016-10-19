@@ -1,0 +1,178 @@
+ng2-collapse-doc
+# Collapse
+
+Collapse is a flexible component that allows to hide or show content on pages on user demand.
+
+# Table of contents
+
+1. [Usage](#usage)
+2. [Examples](#examples)
+    1. [Expand/Collapse](#daterange)
+    2. [Content](#restrictrange)
+    3. [Accordion](#singledate)
+4. [Styling](#styling)
+5. [API Reference](#apiref)
+    1. [Properties](#properties)
+    2. [Events](#events)
+    3. [Methods](#methods)
+    4. [Annotations](#annotations)
+
+
+## Usage <a name="usage"></a>
+
+Importing collapse module:
+
+```typescript
+import { CollapseModule } from 'ng2-bootstrap/ng2-bootstrap';
+```
+The collapse component uses these classes to handle content folding:
+
+`.collapse` hides the content
+`.collapse.in` shows the content
+`.collapsing` used during expand/collapse starts/finishes
+## Examples
+### Expand/Collapse 
+Regular expand/collapse action
+### Content
+Collapse component allows to store various content, such as HTML and images
+#### HTML
+`Code examples:`
+
+`Example`
+#### Images
+`Code examples:`
+
+`Example`
+### Accordion
+Collapse component functionality allows to create an accordion (a group of collapsable/expandable elements)
+`Code examples:`
+
+`Example`
+## API Reference <a name="api"></a>
+
+### Properties <a name="properties"></a>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Property</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>collapse (boolean=false) </td>
+        <td>if false collapse block will be expanded</td>
+      </tr>
+    </tbody>
+     <tbody>
+          <tr>
+            <td>closeOthers (?boolean=false)</td>
+            <td>if true expanding one item will close all others</td>
+          </tr>
+        </tbody>
+     <tbody>
+          <tr>
+            <td>heading (?string='')</td>
+            <td>clickable text in accordion's group header, check accordion heading below for using html in header</td>
+          </tr>
+        </tbody>
+     <tbody>
+          <tr>
+            <td>isOpen (?boolean=false)</td>
+            <td> is accordion group open or closed</td>
+          </tr>
+        </tbody>        
+     <tbody>
+          <tr>
+            <td>isDisabled (?boolean=false)</td>
+            <td> if true disables accordion group</td>
+          </tr>
+        </tbody>  
+     <tbody>
+          <tr>
+            <td>panelClass (?string='panel-default')</td>
+            <td>provides an ability to use Bootstrap's contextual panel classes (panel-primary, panel-success, panel-info, etc...). <a href = 'http://getbootstrap.com/components/#panels-alternatives'>List of all available classes</a></td>
+          </tr>
+        </tbody> 
+  </table>
+</div>
+
+##### Accordion heading
+Instead of heading attribute on the accordion-group, you can use an accordion-heading attribute on any element inside a group that will be used as the group's header template.
+### Events <a name="events"></a>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Events</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>show.ng2.collapse</td>
+        <td>fires immediately when the show instance method is called.
+</td>
+      </tr>
+    </tbody>
+     <tbody>
+          <tr>
+            <td>shown.ng2.collapse</td>
+            <td>fired when a collapse element has been made visible to the user (will wait for CSS transitions to complete).</td>
+          </tr>
+        </tbody>
+     <tbody>
+          <tr>
+            <td>hide.ng2.collapse</td>
+            <td>fired immediately when the hide method has been called.</td>
+          </tr>
+        </tbody>   
+          <tr>
+        <td>hidden.ng2.collapse</td>
+        <td>fired when a collapse element has been hidden from the user (will wait for CSS transitions to complete).
+</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Methods <a name="methods"></a>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Methods</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>.collapse(options)</td>
+        <td>Activates content as a collapsible element. Accepts an optional options object
+</td>
+      </tr>
+    </tbody>
+     <tbody>
+          <tr>
+            <td>.collapse('toggle')</td>
+            <td>Toggles a collapsible element to shown or hidden.</td>
+          </tr>
+        </tbody>
+     <tbody>
+          <tr>
+            <td>.collapse('show')</td>
+            <td>Shows a collapsible element.</td>
+          </tr>
+        </tbody>   
+          <tr>
+        <td>.collapse('hide')</td>
+        <td>Hides a collapsible element.
+</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Annotations <a name="annotations"></a>
